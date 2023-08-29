@@ -1066,9 +1066,9 @@ a:hover {
 .form_tp a {
     color: #000000;
 }
-.form_tp a:hover, .form_tp a:focus {
+/* .form_tp a:hover, .form_tp a:focus {
     color: #000000;
-}
+} */
 login-form .form-control {
     background: #f7f7f7 none repeat scroll 0 0;
     border: 1px solid #d4d4d4;
@@ -3997,7 +3997,6 @@ button.btn.btn_primary2 {
     border: 1px solid #dddddd;
     border-radius: 3px;
     padding: 12px 20px;
-    
     font-size: 14px;
     line-height: 20px;
 }
@@ -4013,4 +4012,35 @@ button.btn.btn_primary2 {
     display: inline-block;
     border-radius: 3px;
     border: 0;
+}
+.inner_table .input_fields input::placeholder {
+    color: #000;
+}
+
+.inner_table .input_fields select {
+    appearance: none !important;
+    -webkit-appearance: menulist-button;
+    -moz-appearance: menulist-button;
+    appearance: menulist-button;
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+}
+.padd_left {
+    padding-left: 0;
+}
+.form_tp .form-select {
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    color: #212529;
+    background-color: unset !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    border: unset;
+    border-radius: unset;
+    border-bottom: 1px solid #000;
+    transition: unset;
+}
+.ctrl_focus {
+    outline: none;
 }
