@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1920px) {
+.eikaebana_body, .main_header , footer .admin_footer {
+    width: 100%;
+    float: left;
+}
+}
+@media (max-width: 767px) {
+.bottom_footer_eikaebana p, .bottom_footer_eikaebana p a {
+    text-align: center;
+}
+.bottom-footer p.float_center {
+    text-align: center;
+    margin-top: 4px;
+}
+.from__section {
+    padding: 50px 0;
+}
+.Login-sd h1 {
+    line-height: 38px;
+    font-size: 28px;
+}
+}
+@media (max-width: 600px) {
+.form_model {
+    width: 100%;
+}
+}
+@media (max-width: 480px) {
+.from__section {
+    padding: 40px 0;
+}
+.Login-sd h1 {
+    line-height: 36px;
+    font-size: 26px;
+}
+}
