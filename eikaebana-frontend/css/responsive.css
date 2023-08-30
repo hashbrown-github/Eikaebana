@@ -197,7 +197,7 @@
     padding: 80px 150px;
 }
 .text_part {
-    padding: 35% 30px;
+    padding: 0 30px;
 }
 #productGallery img.single_imgBox {
     min-height: 753px;
@@ -496,7 +496,28 @@ table.cart_list td p span span {
     margin-bottom: 20px;
 }
 }
+@media (max-width: 900px) {
+    .signup_links ul li {
+        padding: 10px 15px;
+        margin: 0 6px;
+        width: 180px;
+    }
+}
+@media (max-width: 800px){
+.signup_links ul li {
+    padding: 10px 14px;
+    margin: 0 6px;
+    width: 186px;
+}
+.form_groupDiv {
+    width: 84%;
+    margin: 0 8%;
+}
+}
 @media (max-width: 768px) {
+    .signup_links ul li {
+        padding: 10px 10px;
+    }
 .preview-header .nums p, .preview-header .iconfont {
     font-size: 12px !important;
 }
@@ -506,7 +527,7 @@ table.cart_list td p span span {
     max-width: 100% !important;
 }
 .signup_box .row {
-    display: block;
+    display: flex;
 }
 .hashbrownSlide-image {
     height: 350px;
@@ -608,6 +629,7 @@ table.cart_list td p span span {
     line-height: 45px;
     font-size: 35px;
     margin-bottom: 30px;
+    margin-top: 0;
 }
 .myAddress_sec, .myProfile_sec, .mywishlist_sec, .orderList_sec, .contact_sec, .PriPoli_tc, .about_content {
     padding: 40px 0;
