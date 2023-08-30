@@ -4701,3 +4701,66 @@ button.btn.btn_primary2 {
 .ctrl_focus {
     outline: none;
 }
+
+.error_404Sec {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.sec_tablee {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.sec_table_box, .table_carreer {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.error_404Sec h1 {
+    font-size: 200px;
+    line-height: 200px;
+    margin-top: 0;
+}
+.error_404Sec .error_msg {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+.error_404Sec p {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 400;
+}
+.error_404Sec a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 12px 18px 12px 25px;
+}
+.sec_table_box a i {
+    vertical-align: middle;
+}
+.bg-red {
+    background-color: #e20613;
+    color: #fff;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border-radius: 2px;
+    font-family: Segoe-UI;
+    font-size: 15px;
+    line-height: 19px;
+    cursor: pointer;
+    min-width: 120px;
+    display: inline-block;
+    border: 0;
+}
