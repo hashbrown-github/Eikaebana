@@ -27,6 +27,15 @@
 .form_model {
     width: 100%;
 }
+.form_groupDiv {
+    width: 100%;
+}
+.header_div .logo_eikaebana img {
+    width: 140px;
+}
+.Login-sd h1 {
+    margin-bottom: 40px;
+}
 }
 @media (max-width: 480px) {
 .from__section {
