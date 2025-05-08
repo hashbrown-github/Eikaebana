@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eikaebana Tax Invoice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+/*======= EIKAEBANA INVOICE CSS START =======*/
+.box_width {
+    width: 1200px;
+    margin: 0 auto;
+    float: none;
+}
+.box_width .inner__box {
+    width: 100%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    padding: 30px 15px;
+    margin: 15px;
+}
+.logo_div {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+.logo_div h4 {
+    font-size: 26px;
+    line-height: 35px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #000000;
+}
+.gst_div {
+    width: 100%;
+    float: left;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.heading_div {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.heading_div h2 {
+    font-size: 35px;
+    line-height: 47px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.heading_div p span {
+    padding-right: 20px;
+}
+.heading_div p span:last-child {
+    padding-right: 0;
+}
+.box_width .inner__box .gst_div p {
+    font-size: 19px;
+}
+.orderDtls_grid {
+    width: 100%;
+    float: left;
+}
+.logo_div img {
+    width: 18%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.orderDtls_grid {
+    margin-bottom: 0;
+}
+.orderDtls_grid .left__text {
+    width: 50%;
+    float: left;
+    padding-right: 5%;
+}
+.orderDtls_grid .right__text {
+    width: 50%;
+    float: right;
+    padding-left: 5%;
+    margin-bottom: 20px;
+}
+.left__text .inner_add {
+    width: 100%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    margin-bottom: 20px;
+}
+.inner__box .inner_add h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0;
+    background-color: #e9e9e9f7;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 8px 15px;
+}
+.inner_add .para_padd {
+    width: 100%;
+    float: left;
+    padding: 10px 15px;
+}
+.box_width .inner__box p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.box_width .inner__box .inner_add p:last-child, .box_width p:last-child {
+    margin-bottom: 0;
+}
+.box_width .inner__box p .bold_blk, tbody td .bold_blk {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.right__text .Imp__Info {
+    margin-bottom: 20px;
+}
+.right__text .Imp__Info, .right__text .inner_add {
+    width: 100%;
+    float: left;
+    border: 1px solid #d4d4d4;
+}
+.right__text .Imp__Info {
+    border-right: 0;
+}
+.Imp__Info .left__p {
+    width: 50%;
+    float: left;
+}
+.right__text .Imp__Info ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.right__text .Imp__Info ul li {
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 15px;
+}
+.right__text .Imp__Info ul li:last-child {
+    border-bottom: 0;
+}
+.right__text .Imp__Info ul li p:last-child {
+    margin-bottom: 0;
+}
+.box_width .inner__box .OrderDtl_table p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 18.66px;
+    margin-bottom: 0;
+}
+.table__box {
+    width: 100%;
+    float: left;
+}
+.OrderDtl_table {
+    border: 1px solid #d4d4d4;
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+.OrderDtl_table thead {
+    background-color: #e9e9e9f7;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+.OrderDtl_table thead tr th, .OrderDtl_table tbody tr td {
+    border: 0;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.OrderDtl_table thead tr thp:nth-child(2), .OrderDtl_table tbody tr td:nth-child(2) {
+    text-align: left;
+}
+.OrderDtl_table thead tr th, .OrderDtl_table tbody tr td {
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+.OrderDtl_table tbody tr {
+    background-color: #e9e9e9f7;
+}
+.table-striped.OrderDtl_table>tbody>tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+.table_footer {
+    border: 1px solid #d4d4d4;
+    border-top: 0;
+    padding: 15px;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.table_footer .footer__left {
+    width: 30%;
+    float: left;
+}
+.table_footer .footer__right {
+    width: 70%;
+    float: left;
+    text-align: right;
+}
+.box_width .inner__box .table_footer p .bold_blk {
+    font-size: 15px;
+    line-height: 20px;
+}
+.important_Detail {
+    width: 100%;
+    float: left;
+    display: flex;
+}
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+.signatory_div {
+    width: 50%;
+    float: right;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+/* .important_Detail .OrderDtl_table thead ,  */
+.important_Detail .OrderDtl_table tbody tr {
+    background-color: #ffffff;
+}
+.important_Detail .OrderDtl_table thead tr th {
+    padding: 8px 15px;
+    text-align: left;
+}
+/* .important_Detail .inner_add h2 {
+    background-color: #ffffff;
+} */
+.box_width .inner__box .important_Detail .OrderDtl_table p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+}
+.important_Detail .OrderDtl_table tbody tr td:nth-child(2) {
+    text-align: center;
+}
+.charges_dtl {
+    width: 100%;
+    float: left;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+.charges_dtl .inner_dtl {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.charges_dtl .inner_dtl p {
+    width: 100%;
+    float: left;
+}
+.charges_dtl .inner_dtl p .textLeft {
+    width: 70%;
+    float: left;
+}
+.charges_dtl .inner_dtl p .textRight {
+    width: 30%;
+    float: right;
+}
+.mar_To15 {
+    margin-top: 15px;
+}
+.mar_To20 {
+    margin-top: 20px;
+}
+/*======= EIKAEBANA INVOICE CSS END =======*/
+</style>
+</head>
+<body>
+<section class="box_width">
+    <div class="inner__box">
+        <div class="logo_div"> 
+            <img src="images/logo.svg" alt="Eikaebana Logo" />
+            <h4>Tax Invoice</h4>
+        </div>
+        <div class="gst_div">
+            <p>GST: 07AVSPS0281N1ZS </p>
+        </div>
+        <div class="heading_div">
+            <h2>Eikaebana Flower Shop</h2>
+            <p><span><b>SHOWROOM:</b> 681-82 (1ST FLOOR) MAIN SADAR BAZAR, DELHI-110006</span><span><b>PH:</b> 23534044</span><span><b>MOBILE:</b> 9911077966</span></p>
+        </div>
+        <div class="orderDtls_grid">
+            <div class="left__text">
+                <div class="inner_add">
+                    <h2>Shipped To:</h2>
+                    <div class="para_padd">
+                        <p>KIMI</p>
+                        <p>63/1, EMELIA-3</p>
+                        <p>VATIKA CITY SOHNA ROAD, SECTOR-49</p>
+                        <p>GURGAON, PIN-122002</p>
+                        <p><span class="bold_blk">Phone Number: </span> +91.9999467627</p>
+                        <p><span class="bold_blk">Email: </span> ---</p>
+                        <p><span class="bold_blk">Aadhaar: </span> ---</p>
+                        <p><span class="bold_blk">PAN: </span> ---</p>
+                    </div>
+                </div>
+            </div>          
+            <div class="right__text">
+                <div class="inner_add">
+                    <h2>Billed To:</h2>
+                    <div class="para_padd">
+                        <p>KIMI</p>
+                        <p>63/1, EMELIA-3</p>
+                        <p>VATIKA CITY SOHNA ROAD, SECTOR-49</p>
+                        <p>GURGAON, PIN-122002</p>
+                        <p><span class="bold_blk">GST: </span> ---</p>
+                    </div>
+                </div>
+            </div>
+            <div class="table__box">
+                <table class="table table-striped OrderDtl_table">
+                    <thead class="table_header">
+                        <tr>
+                            <th scope="col" width="25%"><p><span class="bold_blk">G.R./R.R. No.</span></p></th>
+                            <th scope="col" width="25%"><p><span class="bold_blk">Dated</span></p></th>
+                            <th scope="col" width="25%"><p><span class="bold_blk">Transport</span></p></th>
+                            <th scope="col" width="25%"><p><span class="bold_blk">Total Carton</span></p></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>---</td>
+                          <td style="text-align: center;">---</td>
+                          <td>---</td>
+                          <td>---</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table__box mar_To20">
+                <table class="table table-striped OrderDtl_table">
+                    <thead class="table_header">
+                        <tr>
+                            <th scope="col" width="2%"><p><span class="bold_blk">#</span></p></th>
+                            <th scope="col" width="30%"><p><span class="bold_blk">Description of Goods</span></p></th>
+                            <th scope="col" width="10%"><p><span class="bold_blk">HSN Code</span></p></th>
+                            <th scope="col" width="6%"><p><span class="bold_blk">QTY.</span></p></th>
+                            <th scope="col" width="6%"><p><span class="bold_blk">Unit</span></p></th>
+                            <th scope="col" width="8%"><p><span class="bold_blk"> Unit Price </span></p></th>
+                            <th scope="col" width="8%"><p><span class="bold_blk">Amount </span></p></th>
+                            <th scope="col" width="10%" colspan="2"><p><span class="bold_blk"> CGST </span></p></th>
+                            <th scope="col" width="10%" colspan="2"><p><span class="bold_blk"> SGST </span></p></th>
+                            <th scope="col" width="10%" colspan="2"><p><span class="bold_blk"> IGST</span></p></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="bold_blk">%</span></td>
+                            <td><span class="bold_blk">AMT</span></td>
+                            <td><span class="bold_blk">%</span></td>
+                            <td><span class="bold_blk">AMT</span></td>
+                            <td><span class="bold_blk">%</span></td>
+                            <td><span class="bold_blk">AMT</span></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>20</td>
+                            <td>PCS</td>
+                            <td>125</td>
+                            <td>2500</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>450</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>20</td>
+                            <td>PCS</td>
+                            <td>175</td>
+                            <td>1500</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>270</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>20</td>
+                            <td>PCS</td>
+                            <td>65</td>
+                            <td>1300</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>20</td>
+                            <td>PCS</td>
+                            <td>55</td>
+                            <td>1100</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>42</td>
+                            <td>PCS</td>
+                            <td>110</td>
+                            <td>4620</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>831.6</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>20</td>
+                            <td>PCS</td>
+                            <td>145</td>
+                            <td>2900</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>522</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>10</td>
+                            <td>PCS</td>
+                            <td>225</td>
+                            <td>2250</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>405</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>ASSORTED ARTIFICIAL FLOWER BUNCH</td>
+                            <td>6702</td>
+                            <td>10</td>
+                            <td>PCS</td>
+                            <td>235</td>
+                            <td>2350</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>423</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>ASSORTED SAMPLE (P&C) </td>
+                            <td>6702</td>
+                            <td>1</td>
+                            <td>PC</td>
+                            <td>250</td>
+                            <td>250</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>--</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left;"><span class="bold_blk">Total:</span></td>
+                            <td style="text-align: center;"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="bold_blk">18770</span></td>
+                            <td></td>
+                            <td><span class="bold_blk">0</span></td>
+                            <td></td>
+                            <td><span class="bold_blk">0</span></td>
+                            <td></td>
+                            <td><span class="bold_blk">3378.6</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table_footer">
+                    <div class="footer__left">
+                        <p><span class="bold_blk">Electronic Reference Number: </span> --- </p>
+                        <p><span class="bold_blk">DT: </span> --- </p>
+                    </div>
+                    <div class="footer__right">
+                        <p><span class="bold_blk"> Rs. 22,149 </span></p>
+                        <p>In Words: <span class="bold_blk"> Rupees Twenty Two Thousand One Hundred Forty Nine Only</span></p>
+                    </div>
+                </div>
+                <div class="charges_dtl">
+                    <div class="inner_dtl">
+                        <p><span class="textLeft">Coupon Applied: </span> <span class="textRight bold_blk"> -200 </span></p>
+                        <p><span class="textLeft">Delivery Cost: </span> <span class="textRight bold_blk"> +200 </span></p>
+                        <p class="mar_To15"><b>Grand Total: <span class="textRight"> Rs. 22,149 </span></b></p>
+                        <p><b>Advance(ifany): <span class="textRight"> 22149</span></b></p>
+                        <p><b>Balance Amount: <span class="textRight"> Rs. (0)</span></b></p>
+                        <p>In Words: <span class="bold_blk"> Rupees Twenty Two Thousand One Hundred Forty Nine Only</span></p>
+                    </div>
+                </div>
+                <div class="important_Detail">
+                    <div class="left__text">
+                        <div class="inner_add">
+                            <h2>Terms & Conditions:</h2>
+                            <div class="para_padd">
+                                <p>1. Goods once sold will not be taken back.</p>
+                                <p>2. Interest @ 18% will be charged if not paid within 15 Days.</p>
+                                <p>3. Our responsibilities ceases after delivery of goods to carriers.</p>
+                                <p>4. All disputes subject to Delhi Jurisdiction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right__text">
+                        <table class="table OrderDtl_table">
+                            <thead class="table_header">
+                                <tr>
+                                    <th scope="col" width="100%" colspan="3"><p><span class="bold_blk">Amount of Tax Subject to Reverse Charge:</span></p></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="33.3%"><span class="bold_blk">CGST</span></td>
+                                    <td width="33.3%"><span class="bold_blk">SGST</span></td>
+                                    <td width="33.3%"><span class="bold_blk">IGST</span></td>
+                                </tr>
+                                <tr>
+                                    <td width="33.3%">---</td>
+                                    <td width="33.3%">---</td>
+                                    <td width="33.3%">---</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="important_Detail">
+                    <div class="left__text">
+                        <div class="inner_add mb-0">
+                            <h2>Bank Details:</h2>
+                            <div class="para_padd">
+                                <p><span class="bold_blk">Bank: </span> HDFC Bank </p>
+                                <p><span class="bold_blk">A/C: </span> 16582560002636</p>
+                                <p><span class="bold_blk">IFSC: </span> HDFC0001658</p>
+                                <p>Sadar Bazar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signatory_div">
+                        <p>For Eikaebana Flower Shop</p>
+                        <p>Authorised Signatory</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

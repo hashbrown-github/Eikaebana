@@ -1,0 +1,1656 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1860px) {
+.hashbrownSlide-image {
+	height: 700px;
+}
+}
+@media (max-width: 1680px) {
+.hashbrownSlide-image {
+	height: 650px;
+}
+.back_image {
+    padding-left: 30%;
+}
+}
+@media (max-width: 1540px) {
+.hashbrownSlide-image {
+	height: 600px;
+}
+}	
+@media (max-width: 1366px) {
+.back_image {
+    padding-left: 24%;
+}
+.content_tfg {
+    top: 28%;
+}
+.orderSucces_new {
+    padding: 50px 0;
+}
+.orderSucces_new .order_successMsg {
+    padding: 80px 210px;
+}
+.orderSucces_new .orderSucess1 {
+    top: 100px;
+    left: 80px;
+    width: 210px;
+}
+.orderSucces_new .orderSucess2 {
+    bottom: 130px;
+    right: 0;
+    width: 180px;
+}
+.orderSucces_new h2 {
+    font-size: 50px;
+    line-height: 45px;
+}
+.orderSucces_new h5 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.empty_box_div {
+    padding-top: 40px;
+}
+.empty_box_div img {
+    width: 35%;
+}
+}
+@media (max-width: 1280px) {
+.hashbrownSlide-image {
+	height: 500px;
+}
+.Category_section, .product_section {
+	padding: 60px 0px;
+}
+.product_dtlSec, .subscription_sec {
+    padding-bottom: 60px;
+}
+.footer_section ul.social_links li {
+    margin-right: 10px;
+}
+.header_breadcrumb {
+    padding-top: 60px;
+}
+#productGallery img.single_imgBox {
+    padding: 30px;
+}
+.products_listSec {
+    padding-bottom: 60px;
+}
+.back_image {
+    padding-left: 18%;
+}
+.myAddress_sec, .myProfile_sec, .mywishlist_sec, .orderList_sec, .contact_sec, .PriPoli_tc, .about_content {
+    padding: 60px 0;
+}
+.about_p80 {
+    padding-top: 60px;
+}
+.contact_sec h3, .PriPoli_tc h3, .info_intro h3 {
+    font-size: 32px;
+    line-height: 42px;
+}
+.contact_box {
+    margin-top: 30px;
+}
+.addres_Dtl {
+    padding-bottom: 60px;
+}
+.order_successSec {
+    padding: 60px 0;
+}
+.coupon_priceDtl {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.delivery_info {
+    margin-bottom: 60px;
+}
+.payment_Dtl {
+    padding-bottom: 60px;
+}
+.order_sec {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.orderDetail_sec {
+    padding-bottom: 60px;
+}
+.product_description {
+    padding-bottom: 60px;
+}
+.PriPoli_tc h4 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 30px;
+    padding: 9px 12px;
+}
+.about_banner {
+    height: 350px;
+}
+}
+@media (max-width: 1199px) {
+.image_part img {
+    height: 510px;
+}
+.text_part img {
+    width: 120px;
+}
+.hashbrownSlide-image {
+    height: 450px;
+}
+.partition_border {
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+#productGallery img.single_imgBox {
+    padding: 15px;
+}
+.inner_home .product_img {
+    height: 260px;
+}
+.back_image {
+    padding-left: 22%;
+}
+.form_groupDiv {
+    width: 80%;
+    margin: 0 10%;
+}
+.order_successMsg h1 {
+    font-size: 30px;
+    line-height: 38px;
+}
+.order_successMsg p.id_txt {
+    font-size: 19px;
+}
+.order_successMsg p {
+    padding: 0 7%;
+}
+.addTo_btns {
+    flex-direction: column;
+}
+.addTo_btns .grey_btn {
+    margin-left: 0;
+    margin-top: 10px;
+}
+.orderSucces_new .orderSucess1 {
+    left: 70px;
+    width: 180px;
+}
+.orderSucces_new .orderSucess2 {
+    width: 170px;
+    right: -30px;
+}
+.orderSucces_new .order_successMsg {
+    padding: 80px 150px;
+}
+.text_part {
+    padding: 35% 30px;
+}
+#productGallery img.single_imgBox {
+    min-height: 753px;
+    max-height: 753px;
+}
+.empty_box_div img {
+    width: 40%;
+}
+.contact_box .Contact_Left {
+    width: 48%;
+}
+.contact_box .Contact_Right {
+    width: 52%;
+    padding-left: 7%;
+}
+.contact_sec h4 {
+    font-size: 18px;
+    line-height: 25px;
+}
+.info_image.aboutImage_1 {
+    height: 500px;
+}
+}
+@media (max-width: 1024px) {
+.image_part img {
+    height: 470px;
+}
+.eikaebanaCell_1 h3 {
+    font-size: 55px;
+    line-height: 65px;
+    width: 500px;
+}
+.main_heading h4, .subscription_sec h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+.subscription_sec .inner_context {
+    width: 80%;
+}
+.order_item .item_content {
+    width: 50%;
+}
+.order_content .status_drop {
+    width: 50%;
+}
+.orderSucces_new .orderSucess2 {
+    width: 150px;
+    right: -10px;
+}
+.order_successMsg p {
+    padding: 0;
+}
+.orderSucces_new .orderSucess1 {
+    width: 170px;
+}
+.about_banner h3 {
+    font-size: 55px;
+    line-height: 65px;
+}
+}
+@media (max-width: 991px) {
+.text_part img {
+    width: 110px;
+}
+.image_part img {
+    height: 450px;
+}
+.Category_section, .product_section {
+    padding: 50px 0px;
+}
+.product_dtlSec, .subscription_sec {
+    padding-bottom: 50px;
+}
+.subscription_sec .bg_pink {
+    padding: 40px 0;  
+}
+.inner_box {
+    height: 200px;
+}
+.main_heading {
+    margin-bottom: 40px;
+}
+.hashbrownSlide-image {
+    height: 400px;
+}
+.subscription_sec .inner_context {
+    width: 100%;
+}
+.subscription_input {
+    width: 75%;
+}
+.header_div .logo_eikaebana img {
+    width: 160px;
+}
+.header_breadcrumb {
+    padding-top: 50px;
+}
+.product_img {
+    height: 300px;
+}
+.product_card {
+    width: calc(33.3% - 16px);
+    margin: 0 8px;
+    margin-bottom: 40px;
+}
+.inner_home .product_img {
+    height: 220px;
+}
+.product_content h3, .product_content h3 a, .actual_price span, .orig_price span, .product_content h4 {
+    font-size: 16px;
+    line-height: 22px;
+}
+.contact_sec h3, .PriPoli_tc h3, .info_intro h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+.contact_box {
+    padding: 30px;
+}
+.text_part h6 {
+    margin-bottom: 20px;
+}
+.text_part h2 {
+    padding-top: 5px;
+}
+.inner_home .actual_price span {
+    margin-right: 7px;
+}
+.products_listSec {
+    padding-bottom: 50px;
+}
+.back_image {
+    padding-left: 15%;
+}
+.myAddress_sec, .myProfile_sec, .mywishlist_sec, .orderList_sec, .contact_sec, .PriPoli_tc, .about_content {
+    padding: 50px 0;
+}
+.about_p80 {
+    padding-top: 50px;
+}
+.wishlist_list ul {
+    margin-top: 30px;
+}
+.wishlist_1 {
+    width: calc(100% - 200px);
+}
+.wishlist_2 {
+    width: 200px;
+    flex-shrink: 0;
+}
+.wishlist_12 p span span {
+    display: unset;
+}
+.wishlist_12 p span {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+    display: block;
+}
+.wishlist_12 h4 {
+    font-size: 18px;
+    line-height: 25px;
+}
+.wishlist_2 h5 {
+    font-size: 18px;
+    line-height: 25px;
+}
+.wishlist_11 {
+    width: 100px;
+    height: 120px;
+}
+.address_list.add_NewaddressForm {
+    width: 80%;
+    padding-right: 0;
+}
+.address_list {
+    padding-right: 15px;
+}
+.addres_Dtl {
+    padding-bottom: 50px;
+}
+.order_successSec {
+    padding: 50px 0;
+}
+.order_successMsg h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 12px;
+}
+.order_successMsg img {
+    margin-bottom: 20px;
+}
+.order_successMsg p.border_bottom {
+    padding: 20px 7%;
+    margin-bottom: 30px;
+}
+table.cart_list tr th {
+    font-size: 16px;
+}
+table.cart_list td p span {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+    display: block;
+}
+table.cart_list td p span span {
+    display: unset;
+}
+.coupon_priceDtl {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.delivery_info {
+    margin-bottom: 50px;
+}
+.left_coupon {
+    padding-right: 15px;
+}
+.right_price {
+    padding-left: 15px;
+}
+.payment_Dtl {
+    padding-bottom: 50px;
+}
+.payment_head {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.payment_head ul {
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.payment_head ul li {
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+.payment_body {
+    padding: 20px 0;
+}
+.order_sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.orderDetail_sec {
+    padding-bottom: 50px;
+}
+.order_detail li {
+    padding: 15px;
+}
+.product_dtlSticky .col-sm-12 {
+    padding: 0;
+}
+#productGallery img {
+    min-width: calc(33.3% - 7px);
+    width: calc(33.3% - 7px);
+}
+.product_images {
+    margin-bottom: 20px;
+}
+.addTo_btns {
+    flex-direction: row;
+}
+.addTo_btns .grey_btn {
+    margin-left: 10px;
+    margin-top: 0;
+}
+.product_description {
+    padding-bottom: 50px;
+}
+.orderSucces_new h2 {
+    font-size: 40px;
+    line-height: 15px;
+}
+#productGallery img.single_imgBox {
+    min-height: 550px;
+    max-height: 550px;
+}
+.empty_box_div img {
+    width: 50%;
+}
+.info_image.aboutImage_1 {
+    height: 450px;
+    padding: 0;
+}
+.info_image.aboutImage_2 {
+    padding-right: 0;
+}
+.about_banner {
+    height: 300px;
+}
+.info_intro h6 {
+    margin-bottom: 20px;
+}
+}
+@media (max-width: 768px) {
+.preview-header .nums p, .preview-header .iconfont {
+    font-size: 12px !important;
+}
+}
+@media (max-width: 767px) {
+.signup_box .row {
+    display: block;
+}
+.hashbrownSlide-image {
+    height: 350px;
+}
+.eikaebanaCell_1 h3 {
+    font-size: 50px;
+    line-height: 62px;
+    width: 450px;
+}
+.image_part img {
+    height: 350px;
+}
+.text_part {
+    padding: 28% 30px;
+}
+.text_part img {
+    width: 130px;
+}
+.border_box {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+.inner_box {
+    height: 400px;
+}
+.nav_right {
+    padding-left: 20px;
+    position: relative;
+    justify-content: flex-end;
+}
+.border_bottom {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 15px;
+}
+.footer ul.social_links {
+    margin-bottom: 0;
+}
+.footer ul.payment_meth {
+    bottom: -34px;
+    right: unset;
+    left: 0;
+}
+.border_line_eikaebana {
+    width: 96%;
+    margin: 0 2%;
+}
+.bottom_footer_eikaebana p, .bottom_footer_eikaebana p a {
+    text-align: center;
+}
+.bottom-footer p.float_center {
+    text-align: center;
+    margin-top: 5px;
+}
+.footer_section .border_bottom ul li p:last-child {
+    margin-bottom: 0;
+}
+.Category_section, .product_section {
+    padding: 40px 0px;
+}
+.product_dtlSec, .subscription_sec {
+    padding-bottom: 40px;
+}
+.image_part img {
+    height: 440px;
+}
+.header_div .logo_eikaebana img {
+    width: 170px;
+}
+.footer_section .border_bottom h3 {
+    font-weight: 600;
+}
+.border_bottom {
+    padding-left: 0;
+    padding-right: 0;
+}
+.header_breadcrumb {
+    padding-top: 40px;
+}
+.products_listSec {
+    padding-bottom: 40px;
+}
+.back_image {
+    background: url('../images/background-flower-flip.png') no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    height: unset;
+    padding: 50px 40px;
+}
+.content_tfg {
+    position: unset;
+    width: 400px;
+    margin-top: 40px;
+}
+.form_groupDiv {
+    width: 550px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.Login-sd h1 {
+    line-height: 45px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.myAddress_sec, .myProfile_sec, .mywishlist_sec, .orderList_sec, .contact_sec, .PriPoli_tc, .about_content {
+    padding: 40px 0;
+}
+.about_introduce .row.about_p80 {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+}
+.contact_sec h3, .PriPoli_tc h3, .info_intro h3 {
+    font-size: 25px;
+    line-height: 30px;
+}
+#success_toast, #failed_toast {
+    font-size: 18px;
+    line-height: 25px;
+}
+.addAddress_modal h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+.address_list.add_NewaddressForm  {
+    width: 100%;
+}
+.addres_Dtl {
+    padding-bottom: 40px;
+}
+.order_successSec {
+    padding: 40px 0;
+}
+.coupon_priceDtl {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.delivery_info {
+    margin-bottom: 40px;
+}
+.payment_Dtl {
+    padding-bottom: 40px;
+}
+.order_sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.header_breadcrumb {
+    padding-top: 40px;
+}
+.orderDetail_sec {
+    padding-bottom: 40px;
+}
+.product_description {
+    padding-bottom: 40px;
+}
+#productGallery img.single_imgBox {
+    min-height: 500px;
+    max-height: 500px;
+}
+/*======== MOBILE MENU BEGIN ==========*/
+.login_icon span, .person_icon i {
+    font-size: 28px;
+}
+.profile-dropdown {
+    padding: 0;
+}
+.login_btns {
+    display: none;
+}
+.right_mobileMenu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    position: relative;
+}
+.b-brand, .b-link, .b-nav li a {
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 500;
+}
+.b-nav {
+    background: #fff none repeat scroll 0 0;
+    position: absolute;
+    top: 0;
+    width: 275px;
+    z-index: 12;
+    box-shadow: 0 5px 24px rgb(24 24 24 / 27%);
+}
+.b-nav:not(.open) {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
+}
+.b-nav {
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.b-nav ul {
+    padding-left: 0px;
+    display: block;
+    margin-top: 60px;
+}
+.b-nav li {
+    color: #fff;
+    list-style-type: none;
+    padding: 12px;
+    text-align: left;
+    -webkit-transform: translateX(275px);
+    -ms-transform: translateX(275px);
+    transform: translateX(275px);
+}
+.b-nav li a.black_btn { 
+    color: #ffffff;
+}
+.b-nav li a.black_btn:hover, .b-nav li a.black_btn:focus { 
+    color: #ffffff;
+}
+.b-nav li:not(.open) {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
+}
+.b-nav li:not(.open), .b-nav.open li {
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+.b-nav li:first-child {
+    margin-top: 0px;
+}
+.b-nav.open {
+    visibility: visible;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+.b-nav:not(.open) {
+    visibility: hidden;
+    animation-duration: 0.4s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
+}
+.b-nav.open li {
+    padding-left: 30px;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft
+}
+.b-menu {
+    cursor: pointer;
+    display: block;
+    height: 23px;
+    position: relative;
+    top: 4px;
+    transition: all 0.4s ease 0s;
+    width: 25px;
+    z-index: 12;
+    right: 2px;
+    bottom: 0;
+}
+.b-bun--bottom, .b-bun--mid, .b-bun--top {
+    height: 2px;
+    width: 25px;
+}
+.b-bun {
+    background: #B5B5C3;
+    transition: all .4s ease;
+}
+.b-brand, .b-bun {
+    position: relative;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+.b-bun--top {
+    top: 0;
+}
+.b-bun--mid {
+    top: 8px;
+}
+.b-bun--bottom {
+    top: 16px;
+}
+.b-brand {
+    color: #2196f3;
+    top: -21.43px;
+    transition: all .4s ease;
+    z-index: 13;
+}
+.b-container {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+}
+.b-container:hover:not(.open) .bun-bottom, .b-container:hover:not(.open) .bun-mid, .b-container:hover:not(.open) .bun-top {
+    background: #2196f3;
+}
+.b-container.open .b-bun--top {
+    background: #B5B5C3;
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.b-container.open .b-bun--mid {
+    opacity: 0;
+}
+.b-container.open .b-bun--bottom {
+    background: #B5B5C3;
+    top: 5px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.b-container.open .b-brand {
+    color: #fff;
+}
+/*========= MOBILE MENU END ===========*/
+.about_introduce .row {
+    align-items: unset;
+    flex-direction: column;
+}
+.info_image.aboutImage_1, .info_image.aboutImage_2 {
+    width: 100%;
+    margin-top: 20px;
+    height: 400px;
+}
+.about_banner h3 {
+    font-size: 50px;
+    line-height: 62px;
+}
+}
+@media (max-width: 762px) {
+.inner_home .orig_price {
+    display: block;
+    margin-top: 3px;
+}
+}
+@media (max-width: 722px) {
+.image_part img {
+    height: 450px;
+}
+.coupon_priceDtl {
+    display: flex;
+    flex-direction: column;
+}
+.left_coupon {
+    width: 100%;
+    padding-right: 0;
+}
+.right_price {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 30px;
+}
+.addres_Dtl {
+    flex-direction: column;
+}
+.address_list {
+    padding-right: 0;
+    width: 100%;
+}
+.payment_Dtl {
+    padding-top: 0;
+}
+.payment_Dtl {
+    flex-direction: column;
+}
+.show_details ul {
+    flex-direction: column;
+}
+.show_details ul li {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.show_details ul li:last-child {
+    margin-bottom: 0;
+}
+.Price_detailBox {
+    padding-top: 0;
+}
+}
+@media (max-width: 628px) {
+.image_part img {
+    height: 500px;
+}
+.product_card {
+    width: calc(50% - 16px);
+    margin: 0 8px;
+    margin-bottom: 40px;
+}
+.myAddress_list .address_item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.myAddress_list .address_item:last-child {
+    margin-bottom: 0;
+}
+.order_successMsg p {
+    padding: 0;
+}
+.order_successMsg p.border_bottom {
+    padding: 20px 0;
+}
+.Cart_added_items {
+    overflow: auto;
+}
+.Cart_added_items table.cart_list {
+    width: 800px;
+    max-width: 800px;
+}
+.filterDiv_order {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.status_drop {
+    margin-top: 20px;
+}
+.order_item .order_content {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.order_item .item_content {
+    width: 100%;
+}
+.order_content .status_drop {
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+}
+.order_item .item_content p, .order_item .item_content p:last-child {
+    margin-bottom: 5px;
+}
+.order_item .item_content .order_idInfo p {
+    margin-bottom: 0;
+}
+.order_item .item_content p .product_lessPrice {
+    font-size: 14px;
+    line-height: 16px;
+}
+.order_item .item_content p {
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+}
+.order_content .order_dayInfo {
+    position: unset;
+    padding: 0;
+    background-color: unset;
+}
+.order_content .order_idInfo {
+    width: 100%;
+}
+.order_item .order_detail {
+    flex-direction: column;
+}
+.order_detail li {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-left: 0;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.order_detail li span {
+    margin-top: 0;
+}
+.order_detail li:last-child {
+    border-bottom: 0; 
+}
+.order_detail .status_drop {
+    margin-top: 0;
+    width: unset;
+}
+.order_detail li {
+    padding: 10px;
+}
+.text_part {
+    padding: 45% 30px;
+}
+.text_part img {
+    width: 120px;
+}
+}
+@media (max-width: 600px) {
+.ctgry_inner {
+    display: flex;
+    flex-direction: column;
+}
+.ctgry_inner .col-xs-6 {
+    width: 100%;
+}
+.image_part img {
+    height: 300px;
+}
+.search_eikaebana {
+    display: none;
+}
+.inner_home .products_grid {
+    flex-wrap: wrap;
+}
+.inner_home .product_card {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.inner_home .product_card:last-child {
+    margin-bottom: 0;
+}
+.inner_home .product_img {
+    height: 400px;
+}
+.text_part {
+    padding: 30px;
+    padding-bottom: 35px;
+}
+.inner_home .orig_price {
+    display: unset;
+    margin-top: 0;
+}
+.inner_home .actual_price span {
+    margin-right: 20px;
+}
+.profile_info ul li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.profile_info {
+    margin-top: 30px;
+}
+.wishlist_list ul li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wishlist_1 {
+    width: 100%;
+}
+.wishlist_2 {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+}
+.wishlist_2 h5 {
+    font-weight: 700;
+}
+.pay_nowBtn {
+    margin-top: 5px;
+}
+.text_part img {
+    width: 90px;
+}
+#productGallery img.single_imgBox {
+    min-height: 400px;
+    max-height: 400px;
+}
+.contact_box {
+    padding: 20px;
+    padding-top: 30px;
+    flex-direction: column-reverse;
+}
+.contact_box .Contact_Right {
+    padding: 0 15%;
+    width: 100%;
+}
+.contact_box .Contact_Left {
+    width: 100%;
+    margin-top: 30px;
+}
+}
+@media (max-width: 550px) {
+.hashbrownSlide-image {
+    height: 250px;
+}
+.eikaebanaCell_1 h3 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 350px;
+}
+.image_part img {
+    height: 250px;
+}
+.text_part h2 {
+    font-size: 50px;
+    line-height: 60px;
+}
+.text_part h2 {
+    padding-top: 0;
+}
+.main_heading h4, .subscription_sec h2 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.subscription_input {
+    width: 85%;
+    margin-top: 25px;
+}
+.inner_box {
+    height: 320px;
+}
+.inner_home .product_img {
+    height: 350px;
+}
+.product_img {
+    height: 260px;
+}
+.back_image {
+    padding: 40px;
+}
+.form_groupDiv {
+    width: 100%;
+    margin: 0;
+    padding: 40px;
+}
+.Login-sd h1 {
+    line-height: 42px;
+    font-size: 32px;
+}
+.profile_info ul li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.right_editing {
+    text-align: left;
+    margin-top: 10px;
+}
+.right_editing.edit_buttons a {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.right_editing p {
+    margin-top: 8px;
+}
+.profile_info {
+    margin-top: 20px;
+}
+.aad_addressBtn {
+    margin-top: 20px;
+    text-align: left;
+}
+.orderDtl_head {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.orderDetail_sec h1 {
+    margin-bottom: 15px;
+}
+}
+@media (max-width: 500px) {
+.address_head {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.address_head button {
+    margin-top: 15px;
+}
+.order_detail li {
+    justify-content: flex-start;
+}
+.order_detail li b {
+    display: block;
+}
+.order_detail li span {
+    margin-left: 5px;
+}
+.contact_box {
+    margin-top: 20px;
+}
+}
+@media (max-width: 480px) {
+.footer ul.payment_meth {
+    position: unset;
+    width: 100%;
+    float: left;
+    flex-wrap: wrap;
+}
+.main_footer .footer_section {
+    padding-bottom: 0;
+    padding-top: 30px;
+}
+.text_part {
+    padding: 30px 20px;
+    padding-bottom: 35px;
+}
+.text_part img {
+    width: 130px;
+}
+.text_part h6 {
+    margin-bottom: 20px;
+}
+.inner_home .product_img {
+    height: 300px;
+}
+.Category_section, .product_section {
+    padding: 30px 0px;
+}
+.product_dtlSec, .subscription_sec {
+    padding-bottom: 30px;
+}
+.subscription_sec .bg_pink {
+    padding: 30px 0;
+}
+.main_heading h4, .subscription_sec h2 {
+    font-size: 26px;
+    line-height: 32px;
+}
+.subscription_sec h2 {
+    margin-bottom: 15px;
+}
+.border_box {
+    margin-top: 15px;
+}
+.subscription_input {
+    width: 100%;
+}
+.header_breadcrumb {
+    padding-top: 30px;
+}
+.main_heading {
+    margin-bottom: 30px;
+}
+.product_card {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.product_img {
+    height: 350px;
+}
+.products_listSec {
+    padding-bottom: 35px;
+}
+.content_tfg h1 {
+    line-height: 42px;
+    font-size: 30px;
+}
+.sc-kAzzGY img {
+    width: 170px;
+}
+.Login-sd h1 {
+    line-height: 38px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.content_tfg {
+    width: 100%;
+}
+.back_image {
+    padding: 30px 20px;
+}
+.form_groupDiv {
+    padding: 30px 20px;
+}
+.content_tfg p {
+    font-weight: 600;
+}
+.myAddress_sec, .myProfile_sec, .mywishlist_sec, .orderList_sec, .contact_sec, .PriPoli_tc, .about_content {
+    padding: 30px 0;
+}
+.about_p80 {
+    padding-top: 30px;
+}
+#success_toast, #failed_toast {
+    font-size: 16px;
+    line-height: 22px;
+}
+.wishlist_list ul {
+    margin-top: 20px;
+}
+.addres_Dtl {
+    padding-bottom: 30px;
+}
+.order_successSec {
+    padding: 30px 0;
+}
+.order_successMsg h1 {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+.order_successMsg p.id_txt {
+    font-size: 18px;
+}
+.order_successMsg img {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.coupon_priceDtl {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.delivery_info {
+    margin-bottom: 30px;
+}
+.delivery_info p {
+    font-size: 14px;
+}
+.delivery_info h6 {
+    font-size: 15px;
+}
+.delivery_info {
+    padding: 15px;
+}
+.delivery_info img {
+    width: 40px;
+    margin-right: 20px;
+}
+.payment_Dtl {
+    padding-bottom: 30px;
+}
+.payment_list .tab-content {
+    padding: 15px;
+}
+.Text_fold {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.text-right {
+    text-align: left;
+}
+.Detail_box {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+.text-right.Detail_box {
+    padding-bottom: 0; 
+}
+.filterDiv_order .status_dropdown {
+    min-width: 142px;
+}
+.order_sec {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header_breadcrumb {
+    padding-top: 30px;
+}
+.orderDetail_sec {
+    padding-bottom: 30px;
+}
+.product_description {
+    padding-bottom: 30px;
+}
+.product_description p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.text_part img {
+    width: 100px;
+}
+#productGallery img.single_imgBox {
+    min-height: 300px;
+    max-height: 300px;
+    padding: 10px;
+}
+.empty_box_div img {
+    width: 60%;
+}
+.contact_box .Contact_Right {
+    padding: 0 10%;
+}
+.PriPoli_tc h4 {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    padding: 8px 12px;
+}
+.about_banner {
+    height: 250px;
+}
+.about_banner h3 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.info_image.aboutImage_1, .info_image.aboutImage_2 {
+    height: 250px;
+}
+.about_introduce .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+}
+@media (max-width: 450px) {
+.addTo_btns {
+    flex-direction: column;
+}
+.addTo_btns .grey_btn {
+    margin-left: 0;
+    margin-top: 10px;
+}
+.variants_div1, .variants_div2 {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.variants_div1 h4, .variants_div2 h4 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.contact_box .Contact_Right {
+    padding: 0 5%;
+}
+}
+@media (max-width: 400px) {
+.text_part img {
+    width: 100px;
+}
+.text_part h2 {
+    font-size: 45px;
+    line-height: 50px;
+}
+.wishlist_12 h4 {
+    font-size: 16px;
+    line-height: 22px;
+}
+.wishlist_12 p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.wishlist_2 h5 {
+    font-size: 16px;
+    line-height: 22px;
+}
+.wishlist_11 {
+    width: 80px;
+    height: 100px;
+}
+.order_successMsg p.border_bottom {
+    font-size: 14px;
+    line-height: 22px;
+}
+.order_successMsg p.border_bottom {
+    padding: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.order_successMsg p {
+    margin-bottom: 15px;
+}
+.order_successMsg img {
+    width: 170px;
+}
+.delivery_info {
+    padding: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.delivery_info img {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.status_drop {
+    width: 100%;
+}
+.filterDiv_order .filters_1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.filterDiv_order .status_dropdown {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+.status_drop {
+    margin-top: 15px;
+}
+.info_intro h6 span {
+    width: 30px;
+    margin-right: 10px;
+}
+.info_intro h6 {
+    font-size: 13px;
+    font-weight: 500;
+}
+.info_intro h6 {
+    margin-bottom: 12px;
+}
+}
+@media (max-width: 360px) {
+.eikaebanaCell_1 h3 {
+    font-size: 38px;
+    line-height: 48px;
+    width: 100%;
+}
+.hashbrownSlide-image {
+    height: 220px;
+}
+.header_div .logo_eikaebana img {
+    width: 134px;
+}
+.image_part img {
+    height: 200px;
+}
+.nav_right {
+    padding-left: 10px;
+}
+.inner_box {
+    height: 250px;
+}
+.border_box {
+    padding: 10px;
+}
+.bottom-footer {
+    padding: 15px 0;
+}
+.bottom_footer_eikaebana .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.border_bottom {
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+}
+.footer ul.payment_meth {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.text_part img {
+    width: 80px;
+}
+.text_part {
+    padding: 20px;
+}
+.text_part h2 {
+    font-size: 40px;
+    line-height: 45px;
+}
+.product_img {
+    height: 300px;
+}
+.content_tfg {
+    margin-top: 30px;
+}
+.content_tfg h1 {
+    line-height: 38px;
+    font-size: 28px;
+}
+.Login-sd h1 {
+    line-height: 35px;
+    font-size: 25px;
+}
+.content_terms {
+    margin-bottom: 0;
+}
+.content_terms p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.back_image {
+    padding: 30px 15px;
+}
+.form_groupDiv {
+    padding: 30px 15px;
+}
+.form_chk_one {
+    font-size: 14px;
+}
+.form-group {
+    margin-bottom: 30px;
+}
+.profile_info {
+    margin-top: 10px;
+}
+.order_successMsg h1 {
+    font-size: 25px;
+    line-height: 32px;
+}
+.coupon_list ul li {
+    padding: 12px;
+}
+.order_detail li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.order_detail li b {
+    display: none;
+}
+.order_detail li span {
+    margin-left: 0;
+    margin-top: 5px;
+}
+#productGallery img.single_imgBox {
+    min-height: 250px;
+    max-height: 250px;
+}
+.empty_box_div img {
+    width: 70%;
+}
+.contact_box .Contact_Right {
+    padding: 0;
+}
+.about_banner {
+    height: 230px;
+}
+.info_image.aboutImage_1, .info_image.aboutImage_2 {
+    height: 230px;
+}
+}
+@media (max-width: 359px) {
+.orderDtl_head div {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.orderDtl_head div a:last-child {
+    margin-left: 0 !important;
+    margin-top: 10px;
+}
+}
+@media (max-width: 320px) {
+.eikaebanaCell_1 h3 {
+    font-size: 33px;
+    line-height: 45px;
+}
+.text_part h6 {
+    margin-bottom: 10px;
+}
+}
+@-webkit-keyframes slideInLeft {
+0% {
+    -webkit-transform: translate3d(345px, 0, 0);
+    transform: translate3d(345px, 0, 0);
+    visibility: visible;
+}
+100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+}
+@keyframes slideInLeft {
+0% {
+    -webkit-transform: translate3d(345px, 0, 0);
+    transform: translate3d(345px, 0, 0);
+    visibility: visible;
+}
+100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+}
