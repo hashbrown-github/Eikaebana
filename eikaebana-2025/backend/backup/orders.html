@@ -1,0 +1,761 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Orders</title>
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.standalone.min.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/material-dashboard.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="g-sidenav-show bg-gray-100 dark_theme">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start main_sidebar" id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="material-icons-round p-2 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav">close</i>
+      <a class="navbar-brand m-0" href="javascript:void(0);">
+        <div class="logo_div">
+          <img src="images/logo.svg" class="navbar-brand-img" alt="Eikaebana">
+        </div>
+      </a>
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse w-auto h-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">dashboard</i>
+            <span class="nav-link-text ms-2">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">package_2</i>
+            <span class="nav-link-text ms-2">Products</span>
+          </a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a  href="category.html" class="nav-link text-white">
+                <span class="sidenav-mini-icon">C</span>
+                <span class="sidenav-normal ms-2">Category</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="inventory.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">inventory</i>
+            <span class="nav-link-text ms-2">Inventory</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="orders.html" class="nav-link text-white active">
+            <i class="material-symbols-outlined opacity-10">orders</i>
+            <span class="nav-link-text ms-2">Orders</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="customers.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">supervisor_account</i>
+            <span class="nav-link-text ms-2">Customers</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="users.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">article_person</i>
+            <span class="nav-link-text ms-2">Users</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main class="main-content border-radius-lg px-md-4">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 border-radius-xl shadow-none main_navbar0" id="navbarBlur" data-scroll="false">
+      <div class="container-fluid px-0 main_navbar1">
+        <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none navPart_1">
+          <a href="javascript:;" class="nav-link p-0 text-body">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </a>
+        </div>
+        <ul class="navbar-nav justify-content-end navPart_4">
+          <li class="nav-item d-xl-none pe-3 d-flex align-items-center">
+            <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <nav aria-label="breadcrumb" class="navPart_2">
+          <ol class="breadcrumb bg-transparent mb-0 p-0 me-sm-4 me-xs-0">
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Orders</li>
+          </ol>
+        </nav>
+        <div class="collapse navbar-collapse me-md-0 navPart_3" id="navbar">
+          <div class="ms-sm-auto d-flex align-items-center">
+            <a href="#" class="btn download_btn mb-0">
+              <span class="material-symbols-outlined text-dark m-0">notifications</span>
+            </a>
+            <div class="blue_btn ms-2">
+              <div class="dropdown action_dropdown">
+                <button class="btn download_btn mb-0" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="material-symbols-outlined text-dark m-0">person_2</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end me-sm-n4 me-n3" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:;">Change Password</a>
+                  <a class="dropdown-item" href="javascript:;">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid px-0 pb-4 mainBody_box">
+      <div class="card">
+        <div class="card-header pb-0">
+          <div class="head_part">
+            <div>
+              <h5 class="mb-0">Orders</h5>
+            </div>
+            <div class="right_side">
+              <a href="#" class="btn bg-gradient-dark m-0 blue_btn" data-bs-toggle="modal" data-bs-target="#add_category">Add Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body pt-3 pb-0">
+          <div class="filter_status filter_1 quote_filter mx-0">
+            <div class="input-group input-group-static mb-0 w-100">
+              <div class="search_box">
+                <input class="form-control" type="text" placeholder="Search for Order ID or Product Name" onfocus="focused(this)" onfocusout="defocused(this)">
+                <button type="button" class="searchIcon"><span class="material-icons-round text-dark">search</span></button>
+              </div>
+            </div>
+            <div class="input-group input-group-static mb-0">
+              <input class="form-control date max-width-unset" type="text" placeholder="From" onfocus="focused(this)" onfocusout="defocused(this)">
+              <span class="searchIcon">
+                <span class="material-symbols-outlined text-dark">date_range</span>
+              </span>
+            </div>
+            <div class="input-group input-group-static mb-0">
+              <input class="form-control date max-width-unset" type="text" placeholder="To" onfocus="focused(this)" onfocusout="defocused(this)">
+              <span class="searchIcon">
+                <span class="material-symbols-outlined text-dark">date_range</span>
+              </span>
+            </div>
+            <div class="search_btn">
+              <button type="button" class="btn bg-gradient-dark m-0 px-2 py-2 blue_btn2"><span class="material-icons-round">tune</span></button>
+            </div>
+          </div>
+          <div class="nav-wrapper position-relative end-0">
+            <ul class="nav nav-pills nav-fill nav_tabs px-0" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#tab_1" role="tab" aria-controls="tab_1-tab" aria-selected="true">All Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab_2" role="tab" aria-controls="tab_2-tab" aria-selected="false">Placed Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab_3" role="tab" aria-controls="tab_3-tab" aria-selected="false">Shipped Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab_4" role="tab" aria-controls="tab_4-tab" aria-selected="false">Delievered Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab_5" role="tab" aria-controls="tab_5-tab" aria-selected="false">Cancelled Orders</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab_1" role="tabpanel" aria-labelledby="tab_1-tab">
+              <div class="table-responsive">
+                <table class="table table-flush product_list" id="order_list">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Ordered Item</th>
+                      <th>Order Amount</th>
+                      <th>Payment Status</th>
+                      <th>Order Placed on</th>
+                      <th>Order Status</th>
+                      <th>Pickup Request</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box blueBox">Placed</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box blueBox">Placed</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box greenBox">Delivered</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box greenBox">Delivered</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="failedBox"></span>Failed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box yellowBox">Shipped</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box redBox">Cancelled</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box blueBox">Placed</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box yellowBox">Shipped</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box greenBox">Delivered</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="failedBox"></span>Failed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box redBox">Cancelled</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab_2" role="tabpanel" aria-labelledby="tab_2-tab">
+              <div class="table-responsive">
+                <table class="table table-flush product_list" id="placed_list">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Ordered Item</th>
+                      <th>Order Amount</th>
+                      <th>Payment Status</th>
+                      <th>Order Placed on</th>
+                      <th>Order Status</th>
+                      <th>Pickup Request</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box blueBox">Placed</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box blueBox">Placed</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-sm">
+                        <div class="select_unselect">
+                          <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                            <input class="form-check-input" type="checkbox">
+                          </div>
+                          <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                        </div>
+                      </td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                      <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box blueBox">Placed</span></p></td>
+                      <td class="text-sm">
+                        <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab_3" role="tabpanel" aria-labelledby="tab_3-tab">
+              <table class="table table-flush product_list" id="shipped_list">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Order ID</th>
+                    <th>Ordered Item</th>
+                    <th>Order Amount</th>
+                    <th>Payment Status</th>
+                    <th>Order Placed on</th>
+                    <th>Order Status</th>
+                    <th>Pickup Request</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-sm">
+                      <div class="select_unselect">
+                        <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                          <input class="form-check-input" type="checkbox">
+                        </div>
+                        <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                      </div>
+                    </td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="failedBox"></span>Failed</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box yellowBox">Shipped</span></p></td>
+                    <td class="text-sm">
+                      <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm">
+                      <div class="select_unselect">
+                        <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                          <input class="form-check-input" type="checkbox">
+                        </div>
+                        <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                      </div>
+                    </td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box yellowBox">Shipped</span></p></td>
+                    <td class="text-sm">
+                      <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="tab_4" role="tabpanel" aria-labelledby="tab_4-tab">
+              <table class="table table-flush product_list" id="delivered_list">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Order ID</th>
+                    <th>Ordered Item</th>
+                    <th>Order Amount</th>
+                    <th>Payment Status</th>
+                    <th>Order Placed on</th>
+                    <th>Order Status</th>
+                    <th>Pickup Request</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-sm">
+                      <div class="select_unselect">
+                        <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                          <input class="form-check-input" type="checkbox">
+                        </div>
+                        <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                      </div>
+                    </td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box greenBox">Delivered</span></p></td>
+                    <td class="text-sm">
+                      <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm">
+                      <div class="select_unselect">
+                        <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                          <input class="form-check-input" type="checkbox">
+                        </div>
+                        <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                      </div>
+                    </td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box greenBox">Delivered</span></p></td>
+                    <td class="text-sm">
+                      <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm">
+                      <div class="select_unselect">
+                        <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                          <input class="form-check-input" type="checkbox">
+                        </div>
+                        <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                      </div>
+                    </td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="completeBox"></span>Completed</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box greenBox">Delivered</span></p></td>
+                    <td class="text-sm">
+                      <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="tab_5" role="tabpanel" aria-labelledby="tab_5-tab">
+              <table class="table table-flush product_list" id="cancelled_list">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Order ID</th>
+                    <th>Ordered Item</th>
+                    <th>Order Amount</th>
+                    <th>Payment Status</th>
+                    <th>Order Placed on</th>
+                    <th>Order Status</th>
+                    <th>Pickup Request</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-sm">
+                      <div class="select_unselect">
+                        <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                          <input class="form-check-input" type="checkbox">
+                        </div>
+                        <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                      </div>
+                    </td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="pendingBox"></span>Pending</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box redBox">Cancelled</span></p></td>
+                    <td class="text-sm">
+                      <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-sm">
+                      <div class="select_unselect">
+                        <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                          <input class="form-check-input" type="checkbox">
+                        </div>
+                        <p class="mb-0 font-weight-normal text-sm">#256739</p>
+                      </div>
+                    </td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Hanging Flower</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Rs. 569</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="failedBox"></span>Failed</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm">Feb 11, 2025</p></td>
+                    <td class="text-sm"><p class="mb-0 font-weight-normal text-sm"><span class="status_box redBox">Cancelled</span></p></td>
+                    <td class="text-sm">
+                      <a href="javascript:;" class="text-primary text-decoration-underline"  data-bs-toggle="modal" data-bs-target="#add_category">Pickup Request</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="add_category" tabindex="-1" role="dialog" aria-labelledby="add_categoryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-weight-normal" id="add_categoryLabel">Pickup Request</h5>
+              <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal_body">
+                <div class="dtl_line0">
+                  <label class="form-label">Date</label>
+                  <div class="input-group input-group-outline">
+                    <input class="form-control date max-width-unset" placeholder="M DD, YYYY" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
+                    <span class="searchIcon">
+                      <span class="material-symbols-outlined text-dark">date_range</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="dtl_line0">
+                  <label class="form-label">Time Slot</label>
+                  <div class="timeslot">
+                    <ul>
+                      <li><p class="mb-0 font-weight-normal text-sm">12:00PM - 02:00PM</p></li>
+                      <li class="active"><p class="mb-0 font-weight-normal text-sm">02:00PM - 04:00PM</p></li>
+                      <li><p class="mb-0 font-weight-normal text-sm">04:00PM - 06:00PM</p></li>
+                      <li><p class="mb-0 font-weight-normal text-sm">06:00PM - 08:00PM</p></li>
+                      <li><p class="mb-0 font-weight-normal text-sm">08:00PM - 10:00PM</p></li>
+                      <li><p class="mb-0 font-weight-normal text-sm">10:00PM - 12:00AM</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dtl_line0 mb-0">
+                  <label class="form-label">Select Courier</label>
+                  <div class="input-group input-group-outline">
+                    <span class="material-icons-round selectIcon">expand_more</span>
+                    <select class="form-control">
+                      <option selected disabled>Choose Courier</option>
+                      <option>Courier 1</option>
+                      <option>Courier 2</option>
+                      <option>Courier 3</option>
+                      <option>Courier 4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-gradient-light" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn bg-gradient-dark" data-bs-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/perfect-scrollbar.min.js"></script>
+  <script src="js/datatables.js"></script>
+  <script src="js/material-dashboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    $(".date").datepicker({
+      format: "M dd, yyyy"
+    });
+  </script>
+  <script>
+    $('.timeslot ul li').on('click', function (e) {
+      e.preventDefault();
+      $('.timeslot ul li').removeClass('active');
+      $(this).toggleClass('active');
+    });
+  </script>
+  <script>
+    if (document.getElementById('order_list')) {
+      const dataTableSearch1 = new simpleDatatables.DataTable("#order_list", {
+        perPageSelect: false,
+        searchable: false,
+        sortable: false,
+        fixedHeight: false,
+        perPage: 10
+      });
+    }
+    if (document.getElementById('placed_list')) {
+      const dataTableSearch2 = new simpleDatatables.DataTable("#placed_list", {
+        perPageSelect: false,
+        searchable: false,
+        sortable: false,
+        fixedHeight: false,
+        perPage: 10
+      });
+    }
+    if (document.getElementById('shipped_list')) {
+      const dataTableSearch3 = new simpleDatatables.DataTable("#shipped_list", {
+        perPageSelect: false,
+        searchable: false,
+        sortable: false,
+        fixedHeight: false,
+        perPage: 10
+      });
+    }
+    if (document.getElementById('delivered_list')) {
+      const dataTableSearch4 = new simpleDatatables.DataTable("#delivered_list", {
+        perPageSelect: false,
+        searchable: false,
+        sortable: false,
+        fixedHeight: false,
+        perPage: 10
+      });
+    }
+    if (document.getElementById('cancelled_list')) {
+      const dataTableSearch5 = new simpleDatatables.DataTable("#cancelled_list", {
+        perPageSelect: false,
+        searchable: false,
+        sortable: false,
+        fixedHeight: false,
+        perPage: 10
+      });
+    }
+  </script>
+</body>
+</html>
+  

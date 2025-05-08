@@ -1,0 +1,1090 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Add Product</title>
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/ico" sizes="32x32" href="images/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/material-dashboard.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="g-sidenav-show bg-gray-100 dark_theme">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start main_sidebar" id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="material-icons-round p-2 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav">close</i>
+      <a class="navbar-brand m-0" href="javascript:void(0);">
+        <div class="logo_div">
+          <img src="images/logo.svg" class="navbar-brand-img" alt="Eikaebana">
+        </div>
+      </a>
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse w-auto h-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="dashboard.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">dashboard</i>
+            <span class="nav-link-text ms-2">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="products.html" class="nav-link text-white active">
+            <i class="material-symbols-outlined opacity-10">package_2</i>
+            <span class="nav-link-text ms-2">Products</span>
+          </a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="category.html" class="nav-link text-white">
+                <span class="sidenav-mini-icon">C</span>
+                <span class="sidenav-normal ms-2">Category</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="inventory.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">inventory</i>
+            <span class="nav-link-text ms-2">Inventory</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="orders.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">orders</i>
+            <span class="nav-link-text ms-2">Orders</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="customers.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">supervisor_account</i>
+            <span class="nav-link-text ms-2">Customers</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="users.html" class="nav-link text-white">
+            <i class="material-symbols-outlined opacity-10">article_person</i>
+            <span class="nav-link-text ms-2">Users</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main class="main-content border-radius-lg px-md-4">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 border-radius-xl shadow-none main_navbar0" id="navbarBlur" data-scroll="false">
+      <div class="container-fluid px-0 main_navbar1">
+        <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none navPart_1">
+          <a href="javascript:;" class="nav-link p-0 text-body">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </a>
+        </div>
+        <ul class="navbar-nav justify-content-end navPart_4">
+          <li class="nav-item d-xl-none pe-3 d-flex align-items-center">
+            <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <nav aria-label="breadcrumb" class="navPart_2">
+          <ol class="breadcrumb bg-transparent mb-0 p-0 me-sm-4 me-xs-0">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="products.html">Products</a></li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Add Product</li>
+          </ol>
+        </nav>
+        <div class="collapse navbar-collapse me-md-0 navPart_3" id="navbar">
+          <div class="ms-sm-auto d-flex align-items-center">
+            <a href="#" class="btn download_btn mb-0">
+              <span class="material-symbols-outlined text-dark m-0">notifications</span>
+            </a>
+            <div class="blue_btn ms-2">
+              <div class="dropdown action_dropdown">
+                <button class="btn download_btn mb-0" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="material-symbols-outlined text-dark m-0">person_2</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end me-sm-n4 me-n3" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:;">Change Password</a>
+                  <a class="dropdown-item" href="javascript:;">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid px-0 pb-4 mainBody_box">
+      <div class="card-header pb-0">
+        <div class="head_part">
+          <div>
+            <h5 class="mb-0">Add Product</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body pt-3 addProductBox">
+          <h6 class="text-lg">Basic Details</h6>
+          <div class="fieldBox">
+            <div class="dtl_line0">
+              <label class="form-label">Product Name</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="E.g Tied Ribbons" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Product ID</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="E.g 456789" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">About</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="About Product" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Description</label>
+              <div class="input-group input-group-outline">
+                <textarea class="form-control" type="text" rows="4" placeholder="Detail of product" onfocus="focused(this)" onfocusout="defocused(this)"></textarea>
+              </div>
+            </div>
+            <div class="dtl_line0 mb-0">
+              <label class="form-label">Image</label>
+              <div class="outerBox">
+                <button type="button" type="button" class="innerBox" onclick="$('#pro-image').click()">
+                  <img src="images/upload-icon.svg" alt="Upload Icon">
+                  <p class="mb-1 font-weight-normal text-sm">Drag & Drop or <span class="text-primary text-decoration-underline">Click to Upload</span></p>
+                  <p class="mb-0 font-weight-normal text-sm text-secondary"><span class="opacity-4">PNG, JPEG. Max Size of 2MB</span></p>
+                </button>
+                <input type="file" id="pro-image" name="pro-image" accept="image/jpeg, image/png" style="display: none;" multiple />
+              </div>
+              <div class="addsteps_15">
+                <div class="preview-images-zone">
+                  <div class="preview-image preview-show-1">
+                    <div class="image-cancel" data-no="1"><span class="material-symbols-outlined">close</span></div>
+                    <div class="image-zone">
+                      <img src="images/flower.jpg" alt="Flower" />
+                    </div>
+                  </div>
+                  <div class="preview-image preview-show-2">
+                    <div class="image-cancel" data-no="2"><span class="material-symbols-outlined">close</span></div>
+                    <div class="image-zone">
+                      <img src="images/flower.jpg" alt="Flower" />
+                    </div>
+                  </div>
+                  <div class="preview-image preview-show-3">
+                    <div class="image-cancel" data-no="3"><span class="material-symbols-outlined">close</span></div>
+                    <div class="image-zone">
+                      <img src="images/flower.jpg" alt="Flower" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body pt-3 addProductBox">
+          <h6 class="text-lg">Product Weight</h6>
+          <div class="fieldBox">
+            <div class="dtl_line0">
+              <label class="form-label">Product Weight</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="e.g 70gm" onfocus="focused(this)" onfocusout="defocused(this)">
+                <div class="smallSelection">
+                  <span class="material-icons-round selectIcon">expand_more</span>
+                  <select class="form-control">
+                    <option selected>kg</option>
+                    <option>gm</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Volumetric Weight</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="e.g 2kg" onfocus="focused(this)" onfocusout="defocused(this)">
+                <div class="smallSelection">
+                  <span class="material-icons-round selectIcon">expand_more</span>
+                  <select class="form-control">
+                    <option selected>kg</option>
+                    <option>gm</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="dtl_line0 mb-0">
+              <label class="form-label">Product Dimensions</label>
+              <div class="dimen_boxes">
+                <div class="input-group input-group-outline ex_position">
+                  <input class="form-control" type="text" placeholder="L" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <span>x</span>
+                </div>
+                <div class="input-group input-group-outline ex_position">
+                  <input class="form-control" type="text" placeholder="B" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <span>x</span>
+                </div>
+                <div class="input-group input-group-outline ex_position">
+                  <input class="form-control" type="text" placeholder="H" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <span>x</span>
+                </div>
+                <div class="input-group input-group-outline">
+                  <input class="form-control" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <div class="smallSelection">
+                    <span class="material-icons-round selectIcon">expand_more</span>
+                    <select class="form-control">
+                      <option selected>in</option>
+                      <option>cm</option>
+                      <option>m</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body pt-3 addProductBox">
+          <h6 class="text-lg">Package Information</h6>
+          <div class="fieldBox">
+            <div class="dtl_line0">
+              <label class="form-label">Items in Package</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="Items in Package" onfocus="focused(this)" onfocusout="defocused(this)">
+                <div class="smallSelection">
+                  <span class="material-icons-round selectIcon">expand_more</span>
+                  <select class="form-control">
+                    <option>Box</option>
+                    <option selected>Pieces</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="dtl_line0 mb-0">
+              <label class="form-label">Unit</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="Total Count" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body pt-3 addProductBox">
+          <h6 class="text-lg">Inventory</h6>
+          <div class="fieldBox">
+            <div class="dtl_line0">
+              <label class="form-label">SKU</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="SKU" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Stock Availability</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="Stock Availability" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0 mb-0">
+              <label class="form-label">Minimum Quantity Order</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="Minimum Quantity Order" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body pt-3 addProductBox">
+          <h6 class="text-lg">Pricing</h6>
+          <div class="fieldBox">
+            <div class="dtl_line0">
+              <label class="form-label">Selling Price</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="Selling Price" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Discount</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="Discount Price" onfocus="focused(this)" onfocusout="defocused(this)">
+                <div class="smallSelection">
+                  <span class="material-icons-round selectIcon">expand_more</span>
+                  <select class="form-control">
+                    <option>Rs.</option>
+                    <option selected>%</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">HSN</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="HSN" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">GST</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="GST" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <!-- <div class="dtl_line0 mb-0">
+              <label class="form-label">Product Variants</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" placeholder="Product Variants" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body pt-3 addProductBox">
+          <h6 class="text-lg">Product Variants (If any)</h6>
+          <div class="fieldBox">
+            <div class="select_unselect">
+              <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                <input class="form-check-input" type="checkbox">
+              </div>
+              <p class="mb-0 font-weight-normal text-sm">This Product has Variants.</p>
+            </div>
+            <div class="variantsDiv_block">
+              <div class="variants_opt">
+                <ul class="vari_opt2">
+                  <li class="vari_opt3">
+                    <div class="vari_opt21">
+                      <h6>Option 1</h6>
+                      <button type="button">Remove</button>
+                    </div>
+                    <div class="variantsField">
+                      <div class="input-group input-group-outline">
+                        <span class="material-icons-round selectIcon">expand_more</span>
+                        <select class="form-control">
+                          <option selected>Color</option>
+                          <option>Style</option>
+                          <option>Size</option>
+                        </select>
+                      </div>
+                      <div class="input-field mb-0"> 
+                        <div class="form_control">
+                          <div class="vaiants_list">
+                            <ul>
+                              <li>
+                                <p>Black</p>
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </li>
+                              <li>
+                                <p>White</p>
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </li>
+                              <li>
+                                <p>Red</p>
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="vari_opt23">
+                            <input type="text" class="vari_opt22" placeholder="Options separated with commas" />
+                            <div class="autocomplete-items" style="display: none;">
+                              <ul>
+                                <li><p class="font-weight-normal text-sm mb-0">White</p></li>
+                                <li><p class="font-weight-normal text-sm mb-0">Green</p></li>
+                                <li><p class="font-weight-normal text-sm mb-0">Pink</p></li>
+                                <li><p class="font-weight-normal text-sm mb-0">Yellow</p></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="vari_opt3">
+                    <div class="vari_opt21">
+                      <h6>Option 2</h6>
+                      <button type="button">Remove</button>
+                    </div>
+                    <div class="variantsField">
+                      <div class="input-group input-group-outline">
+                        <span class="material-icons-round selectIcon">expand_more</span>
+                        <select class="form-control">
+                          <option>Color</option>
+                          <option selected>Style</option>
+                          <option>Size</option>
+                        </select>
+                      </div>
+                      <div class="input-field mb-0"> 
+                        <div class="form_control">
+                          <div class="vaiants_list">
+                            <ul>
+                              <li>
+                                <p>Curly</p>
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="vari_opt23">
+                            <input type="text" class="vari_opt22" placeholder="Options separated with commas" />
+                            <div class="autocomplete-items" style="display: none;">
+                              <ul>
+                                <li><p class="font-weight-normal text-sm mb-0">Curly</p></li>
+                                <li><p class="font-weight-normal text-sm mb-0">Curly</p></li>
+                                <li><p class="font-weight-normal text-sm mb-0">Curly</p></li>
+                                <li><p class="font-weight-normal text-sm mb-0">Curly</p></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="vari_opt3">
+                    <div class="vari_opt21">
+                      <h6>Option 3</h6>
+                      <button type="button">Remove</button>
+                    </div>
+                    <div class="variantsField">
+                      <div class="input-group input-group-outline">
+                        <span class="material-icons-round selectIcon">expand_more</span>
+                        <select class="form-control">
+                          <option>Color</option>
+                          <option>Style</option>
+                          <option selected>Size</option>
+                        </select>
+                      </div>
+                      <div class="input-field mb-0"> 
+                        <div class="form_control">
+                          <!-- <div class="vaiants_list">
+                            <ul>
+                              <li>
+                                <p>20 x 50 In.</p>
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </li>
+                            </ul>
+                          </div> -->
+                          <div class="vari_opt23">
+                            <input type="text" class="vari_opt22" data-role="tagsinput" value="50 x 20 In." placeholder="Options separated with commas" />
+                            <div class="autocomplete-items" style="display: none;">
+                              <ul>
+                                <li><p class="font-weight-normal text-sm mb-0">50 x 20 In.</p></li>
+                                <li><p class="font-weight-normal text-sm mb-0">20 x 15 In.</p></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="vari_opt4">
+                  <button type="button">Add another option</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body pt-3 addProductBox">
+          <div class="variantsDiv_block">
+            <div class="variants_opt mt-0">
+              <div class="vari_opt1">
+                <h6 class="text-lg mb-0">Preview</h6>
+                <span class="select_unselect">
+                  <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                    <input class="form-check-input" type="checkbox">
+                  </div>
+                  <p class="mb-0 font-weight-normal text-sm">Keep Default</p>
+                </span>
+              </div>
+              <div class="vari_opt5 table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" width="6%">Image</th>
+                      <th scope="col" width="9%">Variant</th>
+                      <th scope="col" width="10%">Selling Price</th>
+                      <th scope="col" width="10%">Discounted Price</th>
+                      <th scope="col" width="8%">Stock 
+                        <button type="button" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep Default Stock">
+                          <div class="form-check verified_dtl p-0 m-0 ms-1 is-filled select_one">
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                        </button>
+                      </th>
+                      <th scope="col" width="10%">Weight 
+                        <button type="button" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep Default Weight">
+                          <div class="form-check verified_dtl p-0 m-0 ms-1 is-filled select_one">
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                        </button>
+                      </th>
+                      <th scope="col" width="10%">Vol. Weight 
+                        <button type="button" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep Default Vol. Weight">
+                          <div class="form-check verified_dtl p-0 m-0 ms-1 is-filled select_one">
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                        </button>
+                      </th>
+                      <th scope="col" width="8%">Pieces in Unit
+                        <button type="button" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep Default Pieces in Unit">
+                          <div class="form-check verified_dtl p-0 m-0 ms-1 is-filled select_one">
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                        </button>
+                      </th>
+                      <th scope="col" width="10%">Piece Price
+                        <button type="button" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep Default Piece Price">
+                          <div class="form-check verified_dtl p-0 m-0 ms-1 is-filled select_one">
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                        </button>
+                      </th>
+                      <th scope="col" width="8%">SKU 
+                        <button type="button" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep Default SKU">
+                          <div class="form-check verified_dtl p-0 m-0 ms-1 is-filled select_one">
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                        </button>
+                      </th>
+                      <th scope="col" width="8%">MOQ 
+                        <button type="button" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep Default MOQ">
+                          <div class="form-check verified_dtl p-0 m-0 ms-1 is-filled select_one">
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                        </button>
+                      </th>
+                      <th scope="col" width="3%"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#updateVariantImg_Modal">
+                          <div class="variant_img">
+                            <img src="images/flower.jpg" alt="Flowers" />
+                          </div>
+                        </a>
+                      </td>
+                      <td><p class="mb-0 font-weight-normal text-sm">Red / Curly / 20x50 In.</p></td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <div class="price_cu">
+                                <span>Rs.</span>
+                                <input type="text" class="form_control" placeholder="0.00">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text" placeholder="0.00">
+                                <select>
+                                  <option selected>Rs.</option>
+                                  <option>%</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td> 
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="number" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text">
+                                <select>
+                                  <option selected="">gm</option>
+                                  <option>kg</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text">
+                                <select>
+                                  <option selected="">gm</option>
+                                  <option>kg</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <div class="price_cu">
+                                <span>Rs.</span>
+                                <input type="text" class="form_control" placeholder="0.00">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="deleteIcon">
+                              <button type="button"><span class="material-symbols-outlined">delete</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#updateVariantImg_Modal">
+                          <div class="variant_img">
+                            <img src="images/flower.jpg" alt="Flowers" />
+                          </div>
+                        </a>
+                      </td>
+                      <td><p class="mb-0 font-weight-normal text-sm">Red / Curly / 20x50 In.</p></td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <div class="price_cu">
+                                <span>Rs.</span>
+                                <input type="text" class="form_control" placeholder="0.00">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text" placeholder="0.00">
+                                <select>
+                                  <option selected>Rs.</option>
+                                  <option>%</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td> 
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="number" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text">
+                                <select>
+                                  <option selected="">gm</option>
+                                  <option>kg</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text">
+                                <select>
+                                  <option selected="">gm</option>
+                                  <option>kg</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <div class="price_cu">
+                                <span>Rs.</span>
+                                <input type="text" class="form_control" placeholder="0.00">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="deleteIcon">
+                              <button type="button"><span class="material-symbols-outlined">delete</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#updateVariantImg_Modal">
+                          <div class="variant_img">
+                            <img src="images/flower.jpg" alt="Flowers" />
+                          </div>
+                        </a>
+                      </td>
+                      <td><p class="mb-0 font-weight-normal text-sm">Red / Curly / 20x50 In.</p></td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <div class="price_cu">
+                                <span>Rs.</span>
+                                <input type="text" class="form_control" placeholder="0.00">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text" placeholder="0.00">
+                                <select>
+                                  <option selected>Rs.</option>
+                                  <option>%</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td> 
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="number" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text">
+                                <select>
+                                  <option selected="">gm</option>
+                                  <option>kg</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input weight_input">
+                              <div class="form_control">
+                                <input type="text">
+                                <select>
+                                  <option selected="">gm</option>
+                                  <option>kg</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <div class="price_cu">
+                                <span>Rs.</span>
+                                <input type="text" class="form_control" placeholder="0.00">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="Right_side_input">
+                              <input type="text" class="form_control">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="previewField">
+                          <div class="input-field"> 
+                            <div class="deleteIcon">
+                              <button type="button"><span class="material-symbols-outlined">delete</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerBtns mt-4">
+        <button type="button" class="btn bg-gradient-light m-0">Discard</button>
+        <button type="button" class="btn bg-gradient-dark px-4 m-0">Draft</button>
+        <button type="button" class="btn bg-gradient-dark px-4 m-0">Save</button>
+      </div>
+      <!--===== EDIT VAIANT IMAGE MODAL BEGIN =====--->
+      <div class="modal fade updateImage" id="updateVariantImg_Modal" tabindex="-1" role="dialog" aria-labelledby="updateVariantImg_ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-weight-normal" id="updateVariantImg_ModalLabel">Update Variant Image</h5>
+              <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal_body">
+                <div class="variant_images">
+                  <ul>
+                    <li class="upload_images">
+                      <div class="upload_files">
+                        <span class="input_files">
+                          <input type="file" multiple="">
+                        </span>
+                        <div class="inner_design">
+                          <span class="material-icons">arrow_circle_left</span>
+                          <button type="button">Add Image</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="active_img">
+                      <div class="variant_check form-check verified_dtl p-0 m-0 is-filled select_one">
+                        <input class="form-check-input" type="checkbox" id="cb1" name="variantimage" checked />
+                      </div>
+                      <label class="image_box" for="cb1"><img src="images/flower.jpg" alt="Flowers"></label>
+                    </li>
+                    <li>
+                      <div class="variant_check form-check verified_dtl p-0 m-0 is-filled select_one">
+                        <input class="form-check-input" type="checkbox" id="cb2" name="variantimage" />
+                      </div>
+                      <label class="image_box" for="cb2"><img src="images/flower.jpg" alt="Flowers"></label>
+                    </li>
+                    <li>
+                      <div class="variant_check form-check verified_dtl p-0 m-0 is-filled select_one">
+                        <input class="form-check-input" type="checkbox" id="cb3" name="variantimage" />
+                      </div>
+                      <label class="image_box" for="cb3"><img src="images/flower.jpg" alt="Flowers"></label>
+                    </li>
+                    <li>
+                      <div class="variant_check form-check verified_dtl p-0 m-0 is-filled select_one">
+                        <input class="form-check-input" type="checkbox" id="cb4" name="variantimage" />
+                      </div>
+                      <label class="image_box" for="cb4"><img src="images/flower.jpg" alt="Flowers"></label>
+                    </li>
+                    <li>
+                      <div class="variant_check form-check verified_dtl p-0 m-0 is-filled select_one">
+                        <input class="form-check-input" type="checkbox" id="cb5" name="variantimage" />
+                      </div>
+                      <label class="image_box" for="cb5"><img src="images/flower.jpg" alt="Flowers"></label>
+                    </li>
+                    <li>
+                      <div class="variant_check form-check verified_dtl p-0 m-0 is-filled select_one">
+                        <input class="form-check-input" type="checkbox" id="cb6" name="variantimage" />
+                      </div>
+                      <label class="image_box" for="cb6"><img src="images/flower.jpg" alt="Flowers"></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-gradient-light" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn bg-gradient-dark" data-bs-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--===== EDIT VAIANT IMAGE MODAL END =====--->
+    </div>
+    <div class="payment_loader">
+      <div class="loader3"></div>
+    </div>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/perfect-scrollbar.min.js"></script>
+  <script src="js/datatables.js"></script>
+  <script src="js/material-dashboard.min.js"></script>
+  <script src="http://themepixels.me/demo/bracket/lib/bootstrap-tagsinput/bootstrap-tagsinput.js" type="text/javascript"></script>
+  <!--======== TOOLTIP SCRIPT START =======-->
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+  <!--========= TOOLTIP SCRIPT END ========-->
+  <script>
+    $(document).ready(function () {
+      document.getElementById('pro-image').addEventListener('change', readImage, false);
+  
+      $(document).on('click', '.image-cancel', function () {
+        let no = $(this).data('no');
+        $(".preview-image.preview-show-" + no).remove();
+      });
+    });
+    var num = 4;
+    function readImage() {
+      if (window.File && window.FileList && window.FileReader) {
+        var files = event.target.files; //FileList object
+        var output = $(".preview-images-zone");
+  
+        for (let i = 0; i < files.length; i++) {
+          var file = files[i];
+          if (!file.type.match('image')) continue;
+  
+          var picReader = new FileReader();
+  
+          picReader.addEventListener('load', function (event) {
+            var picFile = event.target;
+            var html = '<div class="preview-image preview-show-' + num + '">' +
+              '<div class="image-cancel" data-no="' + num + '"><span class="material-symbols-outlined">close</span></div>' +
+              '<div class="image-zone"><img src="' + picFile.result + '"></div>' +
+              '</div>';
+  
+            output.append(html);
+            num = num + 1;
+          });
+  
+          picReader.readAsDataURL(file);
+        }
+        $("#pro-image").val('');
+      } else {
+        console.log('Browser not support');
+      }
+    }
+  </script>
+</body>
+</html>
+  

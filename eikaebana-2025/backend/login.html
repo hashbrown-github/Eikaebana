@@ -1,0 +1,126 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/ico" sizes="32x32" href="images/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/material-dashboard.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gray-100">
+  <main class="main-content border-radius-lg p-0" data-color="dark" >
+    <div class="page-header align-items-center min-vh-100 login_bg">
+      <div class="container my-5">
+        <div class="card login_card">
+          <div class="logo_box">
+            <img src="images/half-logo.svg" alt="Eikaebana">
+          </div>
+          <div class="p-0 position-relative z-index-2 heading_login">
+            <h4 class="text-black font-weight-bolder text-center mb-2">Login</h4>
+            <p class="mb-0 font-weight-normal text-sm text-center">Kindly enter your details to login.</p>
+          </div>
+          <div class="card-body p-0">
+            <form role="form" class="text-start">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+                <label class="form-label m-0 mb-1">Email</label>
+                <div class="input-group input-group-outline required_box is-invalid">
+                  <input class="form-control" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <small>Email is required!</small>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+                <label class="form-label m-0 mb-1">Password</label>
+                <div class="input-group input-group-outline">
+                  <input class="form-control" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
+                </div>
+                <div class="w-100 text-end"><a href="#" class="font-weight-normal text-sm text-primary">Forgot Password?</a></div>
+              </div>
+              <div class="text-center">
+                <button type="button" class="theme_btn w-100 my-3 mb-2" id="liveToastBtn">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="success_toast_mssg">
+        <div class="success_toast_box" style="z-index: 11">
+          <div id="liveToast" class="toast hide success_toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000" data-bs-autohide="true">
+            <div class="toast-header success_head">
+              <div class="success_rect">
+                <span class="material-icons fade-in-icon">check</span>
+              </div>
+              <strong class="me-auto">Success</strong>
+              <button type="button" class="btn-close btn-close-white toast_btn" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body success_body">
+              <p class="font-weight-normal text-sm">Your form has been successfully submitted, and a confirmation email has been sent.</p>
+            </div>
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="failure_toast_mssg">
+        <div class="failure_toast_box" style="z-index: 11">
+          <div id="live_failToast" class="toast hide failure_toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000" data-bs-autohide="true">
+            <div class="toast-header failure_head">
+              <div class="failure_rect">
+                <span class="material-icons">close</span>
+              </div>
+              <strong class="me-auto">Invalid Email Address</strong>
+              <button type="button" class="btn-close btn-close-white toast_btn" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body failure_body">
+              <p class="font-weight-normal text-sm">The email you provided appears to be incorrect. Please double check and try again.</p>
+            </div>
+            <div class="progress-bar-fail"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/perfect-scrollbar.min.js"></script>
+  <script src="js/datatables.js"></script>
+  <script src="js/material-dashboard.min.js"></script>
+  <!--============ SUCCESS TOAST START =============-->
+<script>
+  document.getElementById("liveToastBtn").onclick = function () {
+    const toastEl = document.getElementById("liveToast");
+    const progressBar = toastEl.querySelector(".progress-bar");
+    const toast = new bootstrap.Toast(toastEl);
+    toast.show();
+    progressBar.style.width = "100%";
+    toastEl.addEventListener("hidden.bs.toast", () => {
+      progressBar.style.width = "0%";
+    });
+  };
+</script>
+<!--============ SUCCESS TOAST END =============-->
+<!--============ FAIL TOAST START =============-->
+<script>
+  document.getElementById("liveToastBtn").onclick = function () {
+    const toastEl = document.getElementById("live_failToast");
+    const progressBar = toastEl.querySelector(".progress-bar-fail");
+    const toast = new bootstrap.Toast(toastEl);
+    toast.show();
+    progressBar.style.width = "100%";
+    toastEl.addEventListener("hidden.bs.toast", () => {
+      progressBar.style.width = "0%";
+    });
+  };
+</script>
+<!--============ FAIL TOAST END =============-->
+</body>
+</html>
+  
