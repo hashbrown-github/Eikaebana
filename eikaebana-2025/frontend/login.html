@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="SEZQ1RgQzMnoRfsVRSWw89TYKiWLSOPHszuWTQ5adoE" />
+<title>Eikaebana | Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" type="image/ico" sizes="32x32" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body class="sticky_footer">
+<!--=============== BANNER  SECTION START ==============-->
+<section>
+  <div class="signup_box">
+    <div class="row">
+      <div class="col-lg-4 col-md-5 col-sm-12 col-12 padding__0">
+        <div class="back_image"> 
+          <div class="sc-kAzzGY"> <a href="index.html"><img src="images/logo-eiakebana.svg" alt=""></a> </div>
+          <div class="content_tfg">
+            <h1>Login to your <span class="bold_dia">Eikaebana</span> account.</h1>
+            <p>You can create any product with your signature. It will make your beloved people supprising.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-12 col-12 padding__0">
+        <div class="back_log">
+          <div class="inner_formDiv">
+            <div class="form_groupDiv">
+              <div class="Login-sd">
+                <h1>Login</h1>
+              </div>
+              <div class="form_tp">
+                <div class="form-group error_div">
+                  <input type="text" class="form-control ctrl_focus" placeholder="Email">
+                  <span class="required-message"><i class="fas fa-exclamation-circle error_icon"></i>Please Enter your Email Address!</span>
+                </div>
+                <div class="form-group error_div">
+                  <input type="password" class="form-control" placeholder="Password">
+                  <i class="las la-eye icon_eye"></i></i>
+                  <i class="las fa-eye-slash icon_eye"></i>
+                  <span class="required-message"><i class="fas fa-exclamation-circle error_icon"></i>Please Enter your Password!</span>
+                  <span class="required-message" style="display: none;"><i class="fas fa-exclamation-circle error_icon"></i>Oops. Name and Password don't match! Give it another go.</span>
+                  <div class="form_chk_one">
+                    <div class="Check_box">
+                      <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand me-4">
+                        <input type="checkbox" checked="">
+                        <span></span> 
+                      </label>
+                      <span>Reminder</span>
+                    </div>
+                    <label class="form-check-label left_n right_forgot"><a href="forgot-password.html">Forgot your Password ?</a></label>
+                  </div>
+                </div>
+                <div class="content_terms">
+                  <p>By continuing, you agree to eikaebana’s <a href="#" class="bold_dia">Terms  and  Conditions</a> and <a href="#" class="bold_dia">Privacy Policy.</a></p>
+                </div>
+                <button type="submit" class="btn btn_primary" id="liveToastBtn" onclick="failfunction()">
+                  <div class="spinner-grow" role="status" id="loginloader" style="display: none;">
+                    <span class="visually-hidden"></span>
+                  </div>
+                  Login
+                </button>
+                <button class="btn btn_primary btn_lign">Don’t have an Account? <a href="signup.html" class="bold_dia">Sign Up</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--====== TOAST SUCESS CODE BEGIN ======-->
+<div id="show_sucessToast" class="successful_msgT">
+  <p>You have successfully logged in!</p>
+</div>
+<!--======= TOAST SUCESS CODE END =======-->
+
+<!--====== TOAST FAIL CODE BEGIN ======-->
+<div id="show_failToast" class="failed_msgT">
+  <p>Session expired! please login again</p>
+</div>
+<!--======= TOAST FAIL CODE END =======-->
+  
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<!--======= TOAST SCRIPT END =======-->
+<script>
+  function sucessfunction() {
+    var x1 = document.getElementById("show_sucessToast");
+    x1.classList.add('show');
+    setTimeout(function(){ x1.classList.remove('show'); }, 3000);
+  }
+</script>
+<script>
+  function failfunction() {
+    var x2 = document.getElementById("show_failToast");
+    x2.classList.add('show');
+    setTimeout(function(){ x2.classList.remove('show'); }, 3000);
+ }
+</script>
+<!--======= TOAST SCRIPT END =======-->
+</body>
+</html>
