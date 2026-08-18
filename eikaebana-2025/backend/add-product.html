@@ -9,7 +9,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" type="image/ico" sizes="32x32" href="images/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/material-dashboard.min.css" />
@@ -18,10 +17,10 @@
 <body class="g-sidenav-show bg-gray-100 dark_theme">
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start main_sidebar" id="sidenav-main">
     <div class="sidenav-header">
-      <i class="material-icons-round p-2 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav">close</i>
+      <i class="material-symbols-outlined p-2 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav">close</i>
       <a class="navbar-brand m-0" href="javascript:void(0);">
         <div class="logo_div">
-          <img src="images/logo.svg" class="navbar-brand-img" alt="Eikaebana">
+          <img src="images/eik-logo-white.png" class="navbar-brand-img" alt="Eikaebana">
         </div>
       </a>
     </div>
@@ -145,15 +144,52 @@
               </div>
             </div>
             <div class="dtl_line0">
-              <label class="form-label">Product ID</label>
+              <label class="form-label">Brand</label>
               <div class="input-group input-group-outline">
-                <input class="form-control" type="text" placeholder="E.g 456789" onfocus="focused(this)" onfocusout="defocused(this)">
+                <span class="material-symbols-outlined selectIcon">expand_more</span>
+                <select class="form-control" id="brandSelect">
+                  <option value="0" selected>Select Brand</option>
+                  <option value="1">Eikaebana</option>
+                  <option value="2">JingleBox</option>
+                </select>
               </div>
             </div>
             <div class="dtl_line0">
-              <label class="form-label">About</label>
+              <label class="form-label">Category</label>
               <div class="input-group input-group-outline">
-                <input class="form-control" type="text" placeholder="About Product" onfocus="focused(this)" onfocusout="defocused(this)">
+                <input class="form-control" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Sub Category</label>
+              <div class="input-group input-group-outline">
+                <input class="form-control" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Pot</label>
+              <div class="input-group input-group-outline">
+                <span class="material-symbols-outlined selectIcon">expand_more</span>
+                <select class="form-control" id="potSelect">
+                  <option value="0" selected>Select Pot</option>
+                  <option value="1">Pot 1</option>
+                  <option value="2">Pot 2</option>
+                  <option value="3">Pot 3</option>
+                  <option value="4">Pot 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="dtl_line0">
+              <label class="form-label">Stones</label>
+              <div class="input-group input-group-outline">
+                <span class="material-symbols-outlined selectIcon">expand_more</span>
+                <select class="form-control" id="stonesSelect">
+                  <option value="0" selected>Select Stones</option>
+                  <option value="1">Stones 1</option>
+                  <option value="2">Stones 2</option>
+                  <option value="3">Stones 3</option>
+                  <option value="4">Stones 4</option>
+                </select>
               </div>
             </div>
             <div class="dtl_line0">
@@ -207,7 +243,7 @@
               <div class="input-group input-group-outline">
                 <input class="form-control" type="text" placeholder="e.g 70gm" onfocus="focused(this)" onfocusout="defocused(this)">
                 <div class="smallSelection">
-                  <span class="material-icons-round selectIcon">expand_more</span>
+                  <span class="material-symbols-outlined selectIcon">expand_more</span>
                   <select class="form-control">
                     <option selected>kg</option>
                     <option>gm</option>
@@ -220,11 +256,39 @@
               <div class="input-group input-group-outline">
                 <input class="form-control" type="text" placeholder="e.g 2kg" onfocus="focused(this)" onfocusout="defocused(this)">
                 <div class="smallSelection">
-                  <span class="material-icons-round selectIcon">expand_more</span>
+                  <span class="material-symbols-outlined selectIcon">expand_more</span>
                   <select class="form-control">
                     <option selected>kg</option>
                     <option>gm</option>
                   </select>
+                </div>
+              </div>
+            </div>
+            <div class="dtl_line0 mb">
+              <label class="form-label">Product Size</label>
+              <div class="dimen_boxes">
+                <div class="input-group input-group-outline ex_position">
+                  <input class="form-control" type="text" placeholder="L" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <span>x</span>
+                </div>
+                <div class="input-group input-group-outline ex_position">
+                  <input class="form-control" type="text" placeholder="B" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <span>x</span>
+                </div>
+                <div class="input-group input-group-outline ex_position">
+                  <input class="form-control" type="text" placeholder="H" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <span>x</span>
+                </div>
+                <div class="input-group input-group-outline">
+                  <input class="form-control" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
+                  <div class="smallSelection">
+                    <span class="material-symbols-outlined selectIcon">expand_more</span>
+                    <select class="form-control">
+                      <option selected>in</option>
+                      <option>cm</option>
+                      <option>m</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
@@ -246,7 +310,7 @@
                 <div class="input-group input-group-outline">
                   <input class="form-control" type="text" onfocus="focused(this)" onfocusout="defocused(this)">
                   <div class="smallSelection">
-                    <span class="material-icons-round selectIcon">expand_more</span>
+                    <span class="material-symbols-outlined selectIcon">expand_more</span>
                     <select class="form-control">
                       <option selected>in</option>
                       <option>cm</option>
@@ -264,23 +328,36 @@
           <h6 class="text-lg">Package Information</h6>
           <div class="fieldBox">
             <div class="dtl_line0">
+              <label class="form-label">Unit</label>
+              <div class="input-group input-group-outline">
+                <span class="material-symbols-outlined selectIcon">expand_more</span>
+                <select class="form-control" id="unitSelect">
+                  <option value="0" selected>Select Unit</option>
+                  <option value="1">Box</option>
+                  <option value="2">Packet</option>
+                  <option value="3">Bottle</option>
+                  <option value="4">Dozen</option>
+                </select>
+              </div>
+            </div>
+            <div class="dtl_line0">
               <label class="form-label">Items in Package</label>
               <div class="input-group input-group-outline">
                 <input class="form-control" type="text" placeholder="Items in Package" onfocus="focused(this)" onfocusout="defocused(this)">
-                <div class="smallSelection">
-                  <span class="material-icons-round selectIcon">expand_more</span>
+                <!-- <div class="smallSelection">
+                  <span class="material-symbols-outlined selectIcon">expand_more</span>
                   <select class="form-control">
                     <option>Box</option>
                     <option selected>Pieces</option>
                   </select>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="dtl_line0 mb-0">
-              <label class="form-label">Unit</label>
-              <div class="input-group input-group-outline">
-                <input class="form-control" type="text" placeholder="Total Count" onfocus="focused(this)" onfocusout="defocused(this)">
+            <div class="select_unselect">
+              <div class="form-check verified_dtl p-0 m-0 is-filled select_one">
+                <input class="form-check-input" type="checkbox">
               </div>
+              <p class="mb-0 font-weight-normal text-sm">Sell by Piece</p>
             </div>
           </div>
         </div>
@@ -315,7 +392,7 @@
           <h6 class="text-lg">Pricing</h6>
           <div class="fieldBox">
             <div class="dtl_line0">
-              <label class="form-label">Selling Price</label>
+              <label class="form-label">Selling Price (Incl. GST)*</label>
               <div class="input-group input-group-outline">
                 <input class="form-control" type="text" placeholder="Selling Price" onfocus="focused(this)" onfocusout="defocused(this)">
               </div>
@@ -325,10 +402,10 @@
               <div class="input-group input-group-outline">
                 <input class="form-control" type="text" placeholder="Discount Price" onfocus="focused(this)" onfocusout="defocused(this)">
                 <div class="smallSelection">
-                  <span class="material-icons-round selectIcon">expand_more</span>
+                  <span class="material-symbols-outlined selectIcon">expand_more</span>
                   <select class="form-control">
-                    <option>Rs.</option>
-                    <option selected>%</option>
+                    <option selected>Rs.</option>
+                    <option>%</option>
                   </select>
                 </div>
               </div>
@@ -340,9 +417,16 @@
               </div>
             </div>
             <div class="dtl_line0">
-              <label class="form-label">GST</label>
+              <label class="form-label">GST%</label>
               <div class="input-group input-group-outline">
                 <input class="form-control" type="text" placeholder="GST" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+            </div>
+            <div class="dtl_line0 mb-0">
+              <label class="form-label">Discounted Price(Incl. GST)</label>
+              <div class="Right_side_input">
+                <span>Rs. <span id="calculatedDiscount">0.00</span></span>
+                <input type="hidden" id="hiddenDiscountedPrice" name="hiddenDiscountedPrice">
               </div>
             </div>
             <!-- <div class="dtl_line0 mb-0">
@@ -374,11 +458,13 @@
                     </div>
                     <div class="variantsField">
                       <div class="input-group input-group-outline">
-                        <span class="material-icons-round selectIcon">expand_more</span>
+                        <span class="material-symbols-outlined selectIcon">expand_more</span>
                         <select class="form-control">
-                          <option selected>Color</option>
+                          <option selected>Select Variant Option</option>
+                          <option>Color</option>
                           <option>Style</option>
                           <option>Size</option>
+                          <option>Dimension</option>
                         </select>
                       </div>
                       <div class="input-field mb-0"> 
@@ -387,20 +473,20 @@
                             <ul>
                               <li>
                                 <p>Black</p>
-                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                                <button type="button"><span class="material-symbols-outlined delete_icon">close</span></button>
                               </li>
                               <li>
                                 <p>White</p>
-                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                                <button type="button"><span class="material-symbols-outlined delete_icon">close</span></button>
                               </li>
                               <li>
                                 <p>Red</p>
-                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                                <button type="button"><span class="material-symbols-outlined delete_icon">close</span></button>
                               </li>
                             </ul>
                           </div>
                           <div class="vari_opt23">
-                            <input type="text" class="vari_opt22" placeholder="Options separated with commas" />
+                            <input type="text" class="vari_opt22" placeholder="Separate options with a comma" />
                             <div class="autocomplete-items" style="display: none;">
                               <ul>
                                 <li><p class="font-weight-normal text-sm mb-0">White</p></li>
@@ -421,7 +507,7 @@
                     </div>
                     <div class="variantsField">
                       <div class="input-group input-group-outline">
-                        <span class="material-icons-round selectIcon">expand_more</span>
+                        <span class="material-symbols-outlined selectIcon">expand_more</span>
                         <select class="form-control">
                           <option>Color</option>
                           <option selected>Style</option>
@@ -434,7 +520,7 @@
                             <ul>
                               <li>
                                 <p>Curly</p>
-                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                                <button type="button"><span class="material-symbols-outlined delete_icon">close</span></button>
                               </li>
                             </ul>
                           </div>
@@ -460,7 +546,7 @@
                     </div>
                     <div class="variantsField">
                       <div class="input-group input-group-outline">
-                        <span class="material-icons-round selectIcon">expand_more</span>
+                        <span class="material-symbols-outlined selectIcon">expand_more</span>
                         <select class="form-control">
                           <option>Color</option>
                           <option>Style</option>
@@ -473,7 +559,7 @@
                             <ul>
                               <li>
                                 <p>20 x 50 In.</p>
-                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                                <button type="button"><span class="material-symbols-outlined delete_icon">close</span></button>
                               </li>
                             </ul>
                           </div> -->
@@ -975,7 +1061,7 @@
                           <input type="file" multiple="">
                         </span>
                         <div class="inner_design">
-                          <span class="material-icons">arrow_circle_left</span>
+                          <span class="material-symbols-outlined">arrow_circle_left</span>
                           <button type="button">Add Image</button>
                         </div>
                       </div>
@@ -1029,7 +1115,7 @@
       </div>
       <!--===== EDIT VAIANT IMAGE MODAL END =====--->
     </div>
-    <div class="payment_loader">
+    <div class="payment_loader" style="display: none;">
       <div class="loader3"></div>
     </div>
   </main>

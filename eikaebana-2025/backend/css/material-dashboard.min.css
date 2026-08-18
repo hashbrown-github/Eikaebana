@@ -16335,7 +16335,7 @@ textarea.form-control, textarea.form-control-lg, textarea.form-control-sm {
    }
    .dropdown .dropdown-toggle:after, .dropend .dropdown-toggle:after, .dropstart .dropdown-toggle:after, .dropup .dropdown-toggle:after {
       content: "\f107";
-      font: normal normal normal 14px/1 'Material Icons Round';
+      font: normal normal normal 14px/1 'Material Symbols Outlined';
       border: none;
       vertical-align: middle;
       font-weight: 600
@@ -16382,7 +16382,7 @@ textarea.form-control, textarea.form-control-lg, textarea.form-control-sm {
       margin-top: 2.8125rem !important
    }
    .dropdown .dropdown-menu:before {
-      font-family: 'Material Icons Round';
+      font-family: 'Material Symbols Outlined';
       content: "\e5c7";
       position: absolute;
       top: 0;
@@ -16418,7 +16418,7 @@ textarea.form-control, textarea.form-control-lg, textarea.form-control-sm {
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)
    }
    .navbar-toggler+.navbar-collapse .dropdown:not(.nav-item) .dropdown-menu:before {
-      font-family: 'Material Icons Round';
+      font-family: 'Material Symbols Outlined';
       content: "\f0d8";
       position: absolute;
       top: 0;
@@ -16457,7 +16457,7 @@ textarea.form-control, textarea.form-control-lg, textarea.form-control-sm {
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)
    }
    .dropdown .dropdown-menu:before {
-      font-family: 'Material Icons Round';
+      font-family: 'Material Symbols Outlined';
       content: "\f0d8";
       position: absolute;
       top: 0;
@@ -16550,7 +16550,7 @@ textarea.form-control, textarea.form-control-lg, textarea.form-control-sm {
    bottom: -20px
 }
 .dropup .dropdown-menu:after {
-   font-family: 'Material Icons Round';
+   font-family: 'Material Symbols Outlined';
    content: "\f0d7";
    position: absolute;
    z-index: -1;
@@ -16856,7 +16856,7 @@ textarea.form-control, textarea.form-control-lg, textarea.form-control-sm {
 }
 .form-check:not(.form-switch) .form-check-input[type=checkbox]:after {
    transition: opacity .25s ease-in-out;
-   font-family: 'Material Icons Round';
+   font-family: 'Material Symbols Outlined';
    content: "\e876";
    color: #fff;
    width: 100%;
@@ -17096,7 +17096,7 @@ textarea.form-control, textarea.form-control-lg, textarea.form-control-sm {
    background-image: radial-gradient(200px circle at 50% 70%, hsla(0, 0%, 100%, .3) 0, #fff 100%)
 }
 .material-icons {
-   font-family: Material Icons Round;
+   font-family: Material Symbols Outlined;
    font-weight: 400;
    font-style: normal;
    font-size: 20px;
@@ -25250,7 +25250,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown
 }
 .choices[data-type*=select-one]:after {
    content: "\f107";
-   font: normal normal normal 14px/1 'Material Icons Round';
+   font: normal normal normal 14px/1 'Material Symbols Outlined';
    position: absolute;
    right: 13.5px;
    top: 14px;
@@ -25519,7 +25519,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown
    top: -20px
 }
 .choices__list--dropdown:before {
-   font-family: 'Material Icons Round';
+   font-family: 'Material Symbols Outlined';
    content: "\f0d8";
    position: absolute;
    top: 0;
@@ -25725,7 +25725,7 @@ ul li.editMode input[type=text] {
 .rating>label:before {
    margin: 5px;
    font-size: 1.25em;
-   font-family: 'Material Icons Round';
+   font-family: 'Material Symbols Outlined';
    display: inline-block;
    content: "\f005"
 }
@@ -26185,6 +26185,7 @@ ul li.editMode input[type=text] {
    border-top: 1px solid #ddd
 }
 .leaflet-oldie .leaflet-popup-content-wrapper {
+   zoom: 1;
    -ms-zoom: 1
 }
 .leaflet-oldie .leaflet-popup-tip {

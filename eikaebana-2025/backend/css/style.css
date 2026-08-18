@@ -1,13 +1,13 @@
 ﻿@charset "UTF-8";
 @font-face {
-    font-family: 'TheScientist';
-    src: url('../fonts/TheScientist.ttf') format('TrueType');
-    font-weight: normal;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    src: url('../fonts/roboto.woff') format('woff');
+    font-weight: 100 900;
     font-style: normal;
 }
 body {
     position: relative;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto';
     -webkit-font-smoothing: antialiased;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -248,7 +248,7 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     padding: 20px 0;
 }
 .navbar-vertical .navbar-nav .nav-link[data-bs-toggle=collapse]:after {
-    font-family: Material Icons Round;
+    font-family: 'Material Symbols Outlined';
     content: "\e5cf";
 }
 .navPart_1 {
@@ -388,7 +388,7 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     color: #fff;
     font-weight: 600;
 }
-.progress-bar {
+.success_toast .progress-bar {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -460,7 +460,7 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     transform: rotate(0deg);
     box-shadow: none;
 }
-.progress-bar-fail {
+.failure_toast .progress-bar-fail {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -470,7 +470,7 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     transition: width 3s linear;
     border-radius: 1px;
 }
-/*======== FAILURE TOAST END =======*/
+/*========== FAILURE TOAST END =========*/
 /*========== LOGIN PAGE START ==========*/
 .logo_box {
     width: 100%;
@@ -478,7 +478,7 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     margin-bottom: 30px;
 }
 .logo_box img {
-    width: 80px;
+    width: 140px;
 }
 .theme_btn {
     background-color: #1A1A1A;
@@ -487,6 +487,10 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     color: #ffffff;
     font-size: 16px;
     line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 .required_box {
     margin-bottom: 30px !important;
@@ -494,7 +498,9 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
 .required_box small {
     font-size: 13px;
     line-height: 16px;
-    bottom: -16px;
+    bottom: -18px;
+    padding: 0 !important;
+    left: 0;
 }
 .login_card {
     max-width: 600px;
@@ -516,6 +522,11 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
 }
 .required_box.is-invalid .form-control {
     border-color: #f44335;
+}
+.theme_btn .spinner-grow {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -4px;
 }
 /*=========== LOGIN PAGE END ===========*/
 /*============ PAGE CSS START ==========*/
@@ -602,7 +613,7 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     margin-left: auto;
     color: rgba(206, 212, 218, .7);
     transition: all .2s ease-in-out;
-    font-family: 'Material Icons Round';
+    font-family: 'Material Symbols Outlined';
     content: '\e5cf';
 }
 .head_part {
@@ -648,6 +659,7 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     white-space: wrap;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    line-clamp: 2;
     -webkit-line-clamp: 2;
     overflow: hidden;
     /* word-break: break-all; */
@@ -742,7 +754,10 @@ body.dark_theme .switch_theme .switch__input+.switch__in .icon-sun {
     justify-content: center;
     border: 1px solid #dddddd !important;
 }
-.download_btn span {font-size: 24px;font-weight: 300;}
+.download_btn span {
+    font-size: 24px;
+    font-weight: 300;
+}
 input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 17px;
     margin-right: -4px;
@@ -759,7 +774,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     max-width: 1320px;
 }
 .quote_filter .search_box, .quote_filter.filter_status .input-group.input-group-static input {
- max-width: 100%;
+    max-width: 100%;
 }
 .quote_filter .search_box {
     min-width: 328px;
@@ -843,7 +858,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: inline-block;
 }
 .bootstrap-tagsinput .tag [data-role="remove"]:after {
-    font-family: 'Material Icons Round';
+    font-family: 'Material Symbols Outlined';
     content: '\e5cd';
     font-size: 20px;
     padding: 0;
